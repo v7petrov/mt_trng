@@ -5,44 +5,39 @@ module NLFSR3 (
   input  logic        init,
   input  logic        nlfsr3_ce,
   input  logic [4:0]  d3,
-  input  logic [4:0]  tk,
+  input  logic [4:0]  tk, //s2
   output logic        o_warbler
 );
 
   // State registers
-  logic [4:0] C5, C4, C3, C2, C1, C0;
+  logic [4:0] next_C5, C5, C4, C3, C2, C1, C0;
+  logic [4:0] node1, node2, node3;
+
+  // other outputs
+  logic [4:0] gamma_out;
+  logic wgt2_5o;
+  logic [4:0] pad_wgt2 = {4'b0000, wgt2_5o};
+
+  assign node1 = gamma_out ^ C1;
+  assign node2 = node1 ^ tk;
+  assign node3 = node2 ^ pad_wgt2;
 
   // WGT2_5: 5→1 bit lookup
-  logic        wgt2_5o;
   WGT2_5 WGT2_5_inst (
     .address(C5),
     .wgt2_5o(wgt2_5o)
   );
 
-  // Pad WGT2_5 output into a 5-bit vector {0,0,0,0,wgt2_5o}
-  logic [4:0] pad_wgt2 = {4'b0000, wgt2_5o};
-
   // Gamma multiplier: 5×5 matrix × 5×1 vector → 5×1 vector
-  logic [4:0] gamma_out;
   gamma_mult gamma_mult_inst (
     .x(pad_wgt2),
     .y(gamma_out)
   );
 
-  // First XOR‐node (bottom‐left in your drawing): tk ⊕ pad_wgt2
-  logic [4:0] sumL = tk ^ pad_wgt2;
-
-  // Second XOR‐node (mid‐right): C1 ⊕ gamma_out
-  logic [4:0] sumR = C1 ^ gamma_out;
-
-  // Third XOR‐node (top‐centre): sumL ⊕ sumR → feedback
-  logic [4:0] feedback = sumL ^ sumR;
-
   // Select between computed feedback and external d3 when load=1
-  logic [4:0] next_C5;
   bigmux2to1 bigmux2to1_inst (
     .sel(load),
-    .a(feedback),
+    .a(node3),
     .b(d3),
     .y(next_C5)
   );
@@ -65,7 +60,7 @@ module NLFSR3 (
     end
     else if (nlfsr3_ce) begin
       // On init we override and inject the tk word into C5
-      C5 <= init ? tk : next_C5;
+      C5 <= next_C5;
       // shift everything down
       C4 <= C5;
       C3 <= C4;
