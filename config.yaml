@@ -1,0 +1,6 @@
+---
+DESIGN_NAME: trng
+VERILOG_FILES: dir::rtl/*.sv
+CLOCK_PERIOD: 9
+CLOCK_PORT: clk
+SYNTH_AUTONAME: true
