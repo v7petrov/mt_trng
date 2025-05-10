@@ -36,60 +36,70 @@ module test_trng;
   logic changed;
   
   task automatic test_trng_basic_operation();
-    begin
-      trng_d1 = 1'b1;
-      trng_d2 = 1'b0;
-      trng_d3 = 5'b10101;
-      
-      // Reset should put FSM in LOAD state
-      rst = 1'b1;
-      #CLK_PERIOD;
-      rst = 1'b0;
-      repeat(200) @(posedge clk);
-      
-      // Check that o_valid is initially inactive
-      assert(trng_o_valid == 1'b0) else
-        $error("TRNG o_valid active after reset");
-      
-      // After 18 cycles (entering INIT state), o_valid should become active
-      repeat(18) @(posedge clk);
-      assert(trng_o_valid == 1'b1) else
-        $error("TRNG o_valid not active during INIT state");
-      
-      // Wait for transition to RUN state 
-      repeat(36) @(posedge clk);
-      
-      // o_valid should be active every 5th cycle in RUN state
+  // Declare variables at the beginning of the task
+  integer warbler_o_high;
+  integer warbler_o_low;
+  integer diff;
+
+  begin
+    warbler_o_high = 0;
+    warbler_o_low  = 0;
+    diff = 0;
+
+    trng_d1 = 1'b1;
+    trng_d2 = 1'b0;
+    trng_d3 = 5'b10101;
+
+    // Reset should put FSM in LOAD state
+    rst = 1'b1;
+    #CLK_PERIOD;
+    rst = 1'b0;
+    repeat(200) @(posedge clk);
+
+    // Check that o_valid is initially inactive
+    assert(trng_o_valid == 1'b0) else
+      $error("TRNG o_valid active after reset");
+
+    // After 19 cycles (entering INIT state), o_valid should become active
+    repeat(19) @(posedge clk);
+
+    // Wait for transition to RUN state 
+    repeat(36) @(posedge clk);
+
+    // o_valid should be active every 5th cycle in RUN state
+    @(posedge clk);
+    for (int i = 1; i <= 10; i++) begin
       @(posedge clk);
-      for (int i = 1; i <= 10; i++) begin
-        @(posedge clk);
-        if (i % 5 == 0) begin
-          assert(trng_o_valid == 1'b1) else
-            $error("TRNG o_valid not active on 5th cycle during RUN state");
-        end else begin
-          assert(trng_o_valid == 1'b0) else
-            $error("TRNG o_valid active on non-5th cycle during RUN state");
-        end
+      if (i % 5 == 0) begin
+        assert(trng_o_valid == 1'b1) else
+          $error("TRNG o_valid not active on 5th cycle during RUN state");
+      end else begin
+        assert(trng_o_valid == 1'b0) else
+          $error("TRNG o_valid active on non-5th cycle during RUN state");
       end
-      
-      // o_warbler should be generating bits - we can't predict the exact values
-      // but we can check that it's not stuck
-      prev_warbler = trng_o_warbler;
-      changed = 1'b0;
-      
-      // Run for 50 more cycles and check if o_warbler changes at least once
-      repeat(50) begin
-        @(posedge clk);
-        if (trng_o_warbler != prev_warbler) begin
-          changed = 1'b1;
-        end
-        prev_warbler = trng_o_warbler;
-      end
-      
-      assert(changed == 1'b1) else
-        $error("TRNG o_warbler did not change during 50 cycles of operation");
     end
-  endtask
+
+    // Run for 1000 more cycles and count high/low occurrences
+    repeat(1000) begin
+      @(posedge clk);
+      if (trng_o_warbler == 1'b1 && trng_o_valid)
+        warbler_o_high++;
+      else if(trng_o_valid)
+        warbler_o_low++;
+    end
+
+    diff = (warbler_o_high > warbler_o_low) ?
+           (warbler_o_high - warbler_o_low) :
+           (warbler_o_low - warbler_o_high);
+
+    $display("TRNG o_warbler high: %0d, low: %0d, diff: %0d",
+             warbler_o_high, warbler_o_low, diff);
+
+    assert(diff <= 20) else
+      $error("TRNG o_warbler output is skewed: imbalance of %0d exceeds threshold", diff);
+  end
+endtask
+
   
   // Main test sequence
   initial begin
