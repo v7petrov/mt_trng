@@ -1,0 +1,41 @@
+Testing TRNG + Bit Collector integration...
+Collected Byte: 0xff at time 125000
+Collected Byte: 0xff at time 205000
+Collected Byte: 0xfe at time 295000
+Collected Byte: 0xf7 at time 375000
+Collected Byte: 0xbd at time 455000
+Collected Byte: 0xd9 at time 535000
+Collected Byte: 0xd9 at time 735000
+Collected Byte: 0xcd at time 1135000
+Collected Byte: 0x99 at time 1575000
+Collected Byte: 0xa2 at time 2015000
+Collected Byte: 0xb1 at time 2415000
+Collected Byte: 0x23 at time 2855000
+Collected Byte: 0x12 at time 3295000
+Collected Byte: 0x0f at time 3695000
+Collected Byte: 0xc2 at time 4135000
+Collected Byte: 0x6b at time 4575000
+Collected Byte: 0x75 at time 4975000
+Collected Byte: 0xb6 at time 5415000
+Collected Byte: 0x88 at time 5855000
+Collected Byte: 0xc3 at time 6255000
+Collected Byte: 0x2d at time 6695000
+Collected Byte: 0x15 at time 7135000
+Collected Byte: 0x37 at time 7535000
+Collected Byte: 0x03 at time 7975000
+Collected Byte: 0xb1 at time 8415000
+Collected Byte: 0x84 at time 8815000
+Collected Byte: 0xea at time 9255000
+Collected Byte: 0x8d at time 9695000
+Collected Byte: 0x57 at time 10095000
+Collected Byte: 0x99 at time 10535000
+Collected Byte: 0xc6 at time 10975000
+Collected Byte: 0x4e at time 11375000
+Collected Byte: 0xfc at time 11815000
+Collected Byte: 0x51 at time 12255000
+Collected Byte: 0x24 at time 12655000
+TRNG + Bit Collector test completed!
+- test_bitcollect.sv:97: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.034 2025-02-24
+- Verilator: $finish at 13us; walltime 0.003 s; speed 3.314 ms/s
+- Verilator: cpu 0.004 s on 1 threads; alloced 121 MB

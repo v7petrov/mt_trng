@@ -1,0 +1,16 @@
+Testing 32x parallel TRNG module...
+Random Word [0]: 0x33e872c7 at time 3045000
+Random Word [1]: 0xacae45b7 at time 3095000
+Random Word [2]: 0xcdfca071 at time 3185000
+Random Word [3]: 0x78865cf1 at time 3235000
+Random Word [4]: 0xe1c12609 at time 3285000
+Random Word [5]: 0xf01cac66 at time 3335000
+Random Word [6]: 0xc62be291 at time 3385000
+Random Word [7]: 0xf79325e9 at time 3435000
+Random Word [8]: 0x2d4fabfc at time 3485000
+Random Word [9]: 0xe91852fc at time 3535000
+32x TRNG test completed!
+- test_parallel.sv:87: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.034 2025-02-24
+- Verilator: $finish at 4us; walltime 0.007 s; speed 496.461 us/s
+- Verilator: cpu 0.007 s on 1 threads; alloced 121 MB
