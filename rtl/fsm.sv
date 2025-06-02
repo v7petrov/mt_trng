@@ -4,7 +4,8 @@ module fsm (
     output logic load_en,
     output logic init_en,
     output logic run_en,
-    output logic nlfsr3_ce
+    output logic nlfsr3_ce,
+    output logic output_en
 );
 
     // State encoding (one-hot): LOAD=100, INIT=010, RUN=001
@@ -66,10 +67,13 @@ module fsm (
     always_comb begin
         if (load_en) begin
             nlfsr3_ce = 1'b1;
+            output_en = 1'b0;
         end else if (init_en) begin
+            output_en = 1'b0;
             nlfsr3_ce = (cnt != 6'd0);
         end else begin
             nlfsr3_ce = (cnt % 6'd5 == 6'd4);
+            output_en = 1'b1;
         end
     end
 

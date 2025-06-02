@@ -122,19 +122,19 @@ VL_ATTR_COLD void Vtest_nlfsr___024root__trace_init_sub__TOP__0(Vtest_nlfsr___02
     tracep->declBus(c+15,0,"d3",-1, VerilatedTraceSigDirection::INPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 4,0);
     tracep->declBus(c+16,0,"tk",-1, VerilatedTraceSigDirection::INPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 4,0);
     tracep->declBit(c+30,0,"o_warbler",-1, VerilatedTraceSigDirection::OUTPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1);
+    tracep->declBus(c+25,0,"next_C5",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1, 4,0);
     tracep->declBus(c+39,0,"C5",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1, 4,0);
     tracep->declBus(c+40,0,"C4",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1, 4,0);
     tracep->declBus(c+41,0,"C3",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1, 4,0);
     tracep->declBus(c+42,0,"C2",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1, 4,0);
     tracep->declBus(c+43,0,"C1",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1, 4,0);
     tracep->declBus(c+44,0,"C0",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1, 4,0);
-    tracep->declBit(c+45,0,"wgt2_5o",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1);
-    tracep->declBus(c+46,0,"pad_wgt2",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1, 4,0);
-    tracep->declBus(c+47,0,"gamma_out",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1, 4,0);
-    tracep->declBus(c+25,0,"sumL",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1, 4,0);
-    tracep->declBus(c+48,0,"sumR",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1, 4,0);
-    tracep->declBus(c+26,0,"feedback",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1, 4,0);
-    tracep->declBus(c+27,0,"next_C5",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1, 4,0);
+    tracep->declBus(c+45,0,"node1",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1, 4,0);
+    tracep->declBus(c+26,0,"node2",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1, 4,0);
+    tracep->declBus(c+27,0,"node3",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1, 4,0);
+    tracep->declBus(c+46,0,"gamma_out",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1, 4,0);
+    tracep->declBit(c+47,0,"wgt2_5o",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1);
+    tracep->declBus(c+48,0,"pad_wgt2",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1, 4,0);
     tracep->pushPrefix("WGT1_5_inst", VerilatedTracePrefixType::SCOPE_MODULE);
     tracep->declBus(c+43,0,"address",-1, VerilatedTraceSigDirection::INPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 4,0);
     tracep->declBit(c+30,0,"wgt1_5o",-1, VerilatedTraceSigDirection::OUTPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1);
@@ -142,18 +142,18 @@ VL_ATTR_COLD void Vtest_nlfsr___024root__trace_init_sub__TOP__0(Vtest_nlfsr___02
     tracep->popPrefix();
     tracep->pushPrefix("WGT2_5_inst", VerilatedTracePrefixType::SCOPE_MODULE);
     tracep->declBus(c+39,0,"address",-1, VerilatedTraceSigDirection::INPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 4,0);
-    tracep->declBit(c+45,0,"wgt2_5o",-1, VerilatedTraceSigDirection::OUTPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1);
+    tracep->declBit(c+47,0,"wgt2_5o",-1, VerilatedTraceSigDirection::OUTPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1);
     tracep->declBus(c+53,0,"LUT",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1, 31,0);
     tracep->popPrefix();
     tracep->pushPrefix("bigmux2to1_inst", VerilatedTracePrefixType::SCOPE_MODULE);
     tracep->declBit(c+12,0,"sel",-1, VerilatedTraceSigDirection::INPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1);
-    tracep->declBus(c+26,0,"a",-1, VerilatedTraceSigDirection::INPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 4,0);
+    tracep->declBus(c+27,0,"a",-1, VerilatedTraceSigDirection::INPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 4,0);
     tracep->declBus(c+15,0,"b",-1, VerilatedTraceSigDirection::INPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 4,0);
-    tracep->declBus(c+27,0,"y",-1, VerilatedTraceSigDirection::OUTPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 4,0);
+    tracep->declBus(c+25,0,"y",-1, VerilatedTraceSigDirection::OUTPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 4,0);
     tracep->popPrefix();
     tracep->pushPrefix("gamma_mult_inst", VerilatedTracePrefixType::SCOPE_MODULE);
-    tracep->declBus(c+46,0,"x",-1, VerilatedTraceSigDirection::INPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 4,0);
-    tracep->declBus(c+47,0,"y",-1, VerilatedTraceSigDirection::OUTPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 4,0);
+    tracep->declBus(c+48,0,"x",-1, VerilatedTraceSigDirection::INPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 4,0);
+    tracep->declBus(c+46,0,"y",-1, VerilatedTraceSigDirection::OUTPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 4,0);
     tracep->popPrefix();
     tracep->popPrefix();
     tracep->popPrefix();
@@ -275,42 +275,51 @@ VL_ATTR_COLD void Vtest_nlfsr___024root__trace_full_0_sub_0(Vtest_nlfsr___024roo
                                     & ((IData)(vlSelfRef.test_nlfsr__DOT__NLFSR2__DOT__mux1_in) 
                                        ^ (IData)(vlSelfRef.test_nlfsr__DOT__warbler_o2)))
                                  : (IData)(vlSelfRef.test_nlfsr__DOT__NLFSR2__DOT__mux1_in)))));
-    bufp->fullCData(oldp+25,(((IData)(vlSelfRef.test_nlfsr__DOT__tk) 
-                              ^ (1U & (0x41fdc9dU >> (IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__C5))))),5);
-    bufp->fullCData(oldp+26,((((IData)(vlSelfRef.test_nlfsr__DOT__tk) 
-                               ^ (1U & (0x41fdc9dU 
-                                        >> (IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__C5)))) 
-                              ^ ((IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__C1) 
-                                 ^ (((0x10U & ((IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4) 
-                                               << 4U)) 
-                                     | ((8U & ((0x41fdc9dU 
-                                                >> (IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__C5)) 
-                                               << 3U)) 
-                                        | (4U & (((0x41fdc9dU 
-                                                   >> (IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__C5)) 
-                                                  ^ (IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4)) 
-                                                 << 2U)))) 
-                                    | (2U & ((IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4) 
-                                             << 1U)))))),5);
-    bufp->fullCData(oldp+27,(((IData)(vlSelfRef.test_nlfsr__DOT__load3)
+    bufp->fullCData(oldp+25,(((IData)(vlSelfRef.test_nlfsr__DOT__load3)
                                ? (IData)(vlSelfRef.test_nlfsr__DOT__d3)
-                               : (((IData)(vlSelfRef.test_nlfsr__DOT__tk) 
-                                   ^ (1U & (0x41fdc9dU 
-                                            >> (IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__C5)))) 
-                                  ^ ((IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__C1) 
-                                     ^ (((0x10U & ((IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4) 
-                                                   << 4U)) 
-                                         | ((8U & (
-                                                   (0x41fdc9dU 
-                                                    >> (IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__C5)) 
-                                                   << 3U)) 
-                                            | (4U & 
-                                               (((0x41fdc9dU 
+                               : ((((IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__C1) 
+                                    ^ (((0x10U & ((IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4) 
+                                                  << 4U)) 
+                                        | ((8U & ((0x41fdc9dU 
+                                                   >> (IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__C5)) 
+                                                  << 3U)) 
+                                           | (4U & 
+                                              (((0x41fdc9dU 
+                                                 >> (IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__C5)) 
+                                                ^ (IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4)) 
+                                               << 2U)))) 
+                                       | (2U & ((IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4) 
+                                                << 1U)))) 
+                                   ^ (IData)(vlSelfRef.test_nlfsr__DOT__tk)) 
+                                  ^ (1U & (0x41fdc9dU 
+                                           >> (IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__C5)))))),5);
+    bufp->fullCData(oldp+26,((((IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__C1) 
+                               ^ (((0x10U & ((IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4) 
+                                             << 4U)) 
+                                   | ((8U & ((0x41fdc9dU 
+                                              >> (IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__C5)) 
+                                             << 3U)) 
+                                      | (4U & (((0x41fdc9dU 
+                                                 >> (IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__C5)) 
+                                                ^ (IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4)) 
+                                               << 2U)))) 
+                                  | (2U & ((IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4) 
+                                           << 1U)))) 
+                              ^ (IData)(vlSelfRef.test_nlfsr__DOT__tk))),5);
+    bufp->fullCData(oldp+27,(((((IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__C1) 
+                                ^ (((0x10U & ((IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4) 
+                                              << 4U)) 
+                                    | ((8U & ((0x41fdc9dU 
+                                               >> (IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__C5)) 
+                                              << 3U)) 
+                                       | (4U & (((0x41fdc9dU 
                                                   >> (IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__C5)) 
                                                  ^ (IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4)) 
                                                 << 2U)))) 
-                                        | (2U & ((IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4) 
-                                                 << 1U))))))),5);
+                                   | (2U & ((IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4) 
+                                            << 1U)))) 
+                               ^ (IData)(vlSelfRef.test_nlfsr__DOT__tk)) 
+                              ^ (1U & (0x41fdc9dU >> (IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__C5))))),5);
     bufp->fullBit(oldp+28,((1U & vlSelfRef.test_nlfsr__DOT__NLFSR1__DOT__a)));
     bufp->fullBit(oldp+29,((1U & (IData)(vlSelfRef.test_nlfsr__DOT__NLFSR2__DOT__b))));
     bufp->fullBit(oldp+30,((1U & (0x2778a365U >> (IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__C1)))));
@@ -362,20 +371,7 @@ VL_ATTR_COLD void Vtest_nlfsr___024root__trace_full_0_sub_0(Vtest_nlfsr___024roo
     bufp->fullCData(oldp+42,(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__C2),5);
     bufp->fullCData(oldp+43,(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__C1),5);
     bufp->fullCData(oldp+44,(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__C0),5);
-    bufp->fullBit(oldp+45,((1U & (0x41fdc9dU >> (IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__C5)))));
-    bufp->fullCData(oldp+46,((1U & (0x41fdc9dU >> (IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__C5)))),5);
-    bufp->fullCData(oldp+47,((((0x10U & ((IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4) 
-                                         << 4U)) | 
-                               ((8U & ((0x41fdc9dU 
-                                        >> (IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__C5)) 
-                                       << 3U)) | (4U 
-                                                  & (((0x41fdc9dU 
-                                                       >> (IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__C5)) 
-                                                      ^ (IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4)) 
-                                                     << 2U)))) 
-                              | (2U & ((IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4) 
-                                       << 1U)))),5);
-    bufp->fullCData(oldp+48,(((IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__C1) 
+    bufp->fullCData(oldp+45,(((IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__C1) 
                               ^ (((0x10U & ((IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4) 
                                             << 4U)) 
                                   | ((8U & ((0x41fdc9dU 
@@ -387,5 +383,18 @@ VL_ATTR_COLD void Vtest_nlfsr___024root__trace_full_0_sub_0(Vtest_nlfsr___024roo
                                               << 2U)))) 
                                  | (2U & ((IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4) 
                                           << 1U))))),5);
+    bufp->fullCData(oldp+46,((((0x10U & ((IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4) 
+                                         << 4U)) | 
+                               ((8U & ((0x41fdc9dU 
+                                        >> (IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__C5)) 
+                                       << 3U)) | (4U 
+                                                  & (((0x41fdc9dU 
+                                                       >> (IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__C5)) 
+                                                      ^ (IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4)) 
+                                                     << 2U)))) 
+                              | (2U & ((IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4) 
+                                       << 1U)))),5);
+    bufp->fullBit(oldp+47,((1U & (0x41fdc9dU >> (IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__C5)))));
+    bufp->fullCData(oldp+48,((1U & (0x41fdc9dU >> (IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__C5)))),5);
     bufp->fullBit(oldp+49,(vlSelfRef.test_nlfsr__DOT__clk));
 }

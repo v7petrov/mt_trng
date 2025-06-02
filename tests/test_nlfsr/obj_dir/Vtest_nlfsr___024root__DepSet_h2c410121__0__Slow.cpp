@@ -5,37 +5,10 @@
 #include "Vtest_nlfsr__pch.h"
 #include "Vtest_nlfsr___024root.h"
 
-VL_ATTR_COLD void Vtest_nlfsr___024root___eval_static__TOP(Vtest_nlfsr___024root* vlSelf);
-
 VL_ATTR_COLD void Vtest_nlfsr___024root___eval_static(Vtest_nlfsr___024root* vlSelf) {
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtest_nlfsr___024root___eval_static\n"); );
     Vtest_nlfsr__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
-    // Body
-    Vtest_nlfsr___024root___eval_static__TOP(vlSelf);
-}
-
-VL_ATTR_COLD void Vtest_nlfsr___024root___eval_static__TOP(Vtest_nlfsr___024root* vlSelf) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtest_nlfsr___024root___eval_static__TOP\n"); );
-    Vtest_nlfsr__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
-    auto& vlSelfRef = std::ref(*vlSelf).get();
-    // Body
-    vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__sumL = 
-        ((IData)(vlSelfRef.test_nlfsr__DOT__tk) ^ (1U 
-                                                   & (0x41fdc9dU 
-                                                      >> (IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__C5))));
-    vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__sumR = 
-        ((IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__C1) 
-         ^ (((0x10U & ((IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4) 
-                       << 4U)) | ((8U & ((0x41fdc9dU 
-                                          >> (IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__C5)) 
-                                         << 3U)) | 
-                                  (4U & (((0x41fdc9dU 
-                                           >> (IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__C5)) 
-                                          ^ (IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4)) 
-                                         << 2U)))) 
-            | (2U & ((IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4) 
-                     << 1U))));
 }
 
 VL_ATTR_COLD void Vtest_nlfsr___024root___eval_final(Vtest_nlfsr___024root* vlSelf) {
@@ -129,6 +102,22 @@ VL_ATTR_COLD void Vtest_nlfsr___024root___stl_sequent__TOP__0(Vtest_nlfsr___024r
                                        | (1U & ((IData)(vlSelfRef.test_nlfsr__DOT__NLFSR2__DOT__b) 
                                                 >> 4U)))))));
     vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4 = 0U;
+    vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__next_C5 
+        = ((IData)(vlSelfRef.test_nlfsr__DOT__load3)
+            ? (IData)(vlSelfRef.test_nlfsr__DOT__d3)
+            : ((((IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__C1) 
+                 ^ (((0x10U & ((IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4) 
+                               << 4U)) | ((8U & ((0x41fdc9dU 
+                                                  >> (IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__C5)) 
+                                                 << 3U)) 
+                                          | (4U & (
+                                                   ((0x41fdc9dU 
+                                                     >> (IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__C5)) 
+                                                    ^ (IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4)) 
+                                                   << 2U)))) 
+                    | (2U & ((IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4) 
+                             << 1U)))) ^ (IData)(vlSelfRef.test_nlfsr__DOT__tk)) 
+               ^ (1U & (0x41fdc9dU >> (IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__C5)))));
 }
 
 VL_ATTR_COLD void Vtest_nlfsr___024root___eval_triggers__stl(Vtest_nlfsr___024root* vlSelf);
@@ -227,14 +216,13 @@ VL_ATTR_COLD void Vtest_nlfsr___024root___ctor_var_reset(Vtest_nlfsr___024root* 
     vlSelf->test_nlfsr__DOT__NLFSR1__DOT__mux1_in = VL_RAND_RESET_I(1);
     vlSelf->test_nlfsr__DOT__NLFSR2__DOT__b = VL_RAND_RESET_I(16);
     vlSelf->test_nlfsr__DOT__NLFSR2__DOT__mux1_in = VL_RAND_RESET_I(1);
+    vlSelf->test_nlfsr__DOT__NLFSR3__DOT__next_C5 = VL_RAND_RESET_I(5);
     vlSelf->test_nlfsr__DOT__NLFSR3__DOT__C5 = VL_RAND_RESET_I(5);
     vlSelf->test_nlfsr__DOT__NLFSR3__DOT__C4 = VL_RAND_RESET_I(5);
     vlSelf->test_nlfsr__DOT__NLFSR3__DOT__C3 = VL_RAND_RESET_I(5);
     vlSelf->test_nlfsr__DOT__NLFSR3__DOT__C2 = VL_RAND_RESET_I(5);
     vlSelf->test_nlfsr__DOT__NLFSR3__DOT__C1 = VL_RAND_RESET_I(5);
     vlSelf->test_nlfsr__DOT__NLFSR3__DOT__C0 = VL_RAND_RESET_I(5);
-    vlSelf->test_nlfsr__DOT__NLFSR3__DOT__sumL = VL_RAND_RESET_I(5);
-    vlSelf->test_nlfsr__DOT__NLFSR3__DOT__sumR = VL_RAND_RESET_I(5);
     vlSelf->test_nlfsr__DOT__NLFSR3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4 = VL_RAND_RESET_I(1);
     vlSelf->__VdlyVal__test_nlfsr__DOT__clk__v0 = VL_RAND_RESET_I(1);
     vlSelf->__VdlySet__test_nlfsr__DOT__clk__v0 = 0;

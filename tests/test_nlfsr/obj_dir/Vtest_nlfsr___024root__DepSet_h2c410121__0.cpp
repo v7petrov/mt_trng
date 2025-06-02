@@ -40,10 +40,39 @@ VL_INLINE_OPT VlCoroutine Vtest_nlfsr___024root___eval_initial__TOP__Vtiming__1(
     }
 }
 
+void Vtest_nlfsr___024root___act_sequent__TOP__0(Vtest_nlfsr___024root* vlSelf);
+
 void Vtest_nlfsr___024root___eval_act(Vtest_nlfsr___024root* vlSelf) {
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtest_nlfsr___024root___eval_act\n"); );
     Vtest_nlfsr__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
+    // Body
+    if ((4ULL & vlSelfRef.__VactTriggered.word(0U))) {
+        Vtest_nlfsr___024root___act_sequent__TOP__0(vlSelf);
+    }
+}
+
+VL_INLINE_OPT void Vtest_nlfsr___024root___act_sequent__TOP__0(Vtest_nlfsr___024root* vlSelf) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtest_nlfsr___024root___act_sequent__TOP__0\n"); );
+    Vtest_nlfsr__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    auto& vlSelfRef = std::ref(*vlSelf).get();
+    // Body
+    vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__next_C5 
+        = ((IData)(vlSelfRef.test_nlfsr__DOT__load3)
+            ? (IData)(vlSelfRef.test_nlfsr__DOT__d3)
+            : ((((IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__C1) 
+                 ^ (((0x10U & ((IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4) 
+                               << 4U)) | ((8U & ((0x41fdc9dU 
+                                                  >> (IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__C5)) 
+                                                 << 3U)) 
+                                          | (4U & (
+                                                   ((0x41fdc9dU 
+                                                     >> (IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__C5)) 
+                                                    ^ (IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4)) 
+                                                   << 2U)))) 
+                    | (2U & ((IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4) 
+                             << 1U)))) ^ (IData)(vlSelfRef.test_nlfsr__DOT__tk)) 
+               ^ (1U & (0x41fdc9dU >> (IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__C5)))));
 }
 
 void Vtest_nlfsr___024root___nba_sequent__TOP__0(Vtest_nlfsr___024root* vlSelf);
@@ -60,6 +89,9 @@ void Vtest_nlfsr___024root___eval_nba(Vtest_nlfsr___024root* vlSelf) {
     }
     if ((4ULL & vlSelfRef.__VnbaTriggered.word(0U))) {
         Vtest_nlfsr___024root___nba_sequent__TOP__1(vlSelf);
+    }
+    if ((7ULL & vlSelfRef.__VnbaTriggered.word(0U))) {
+        Vtest_nlfsr___024root___act_sequent__TOP__0(vlSelf);
     }
 }
 
@@ -110,12 +142,7 @@ VL_INLINE_OPT void Vtest_nlfsr___024root___nba_sequent__TOP__0(Vtest_nlfsr___024
             vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__C4 
                 = vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__C5;
             vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__C5 
-                = ((IData)(vlSelfRef.test_nlfsr__DOT__init3)
-                    ? (IData)(vlSelfRef.test_nlfsr__DOT__tk)
-                    : ((IData)(vlSelfRef.test_nlfsr__DOT__load3)
-                        ? (IData)(vlSelfRef.test_nlfsr__DOT__d3)
-                        : ((IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__sumL) 
-                           ^ (IData)(vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__sumR))));
+                = vlSelfRef.test_nlfsr__DOT__NLFSR3__DOT__next_C5;
         }
     }
     vlSelfRef.test_nlfsr__DOT__NLFSR1__DOT__mux1_in 

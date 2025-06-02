@@ -327,10 +327,10 @@ VL_INLINE_OPT VlCoroutine Vtest_fsm___024root___eval_initial__TOP__Vtiming__0(Vt
                                                          "test_fsm.sv", 
                                                          53);
     if (vlSymsp->_vm_contextp__->assertOnGet(2, 1)) {
-        if (VL_UNLIKELY(((((2U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state)) 
-                           & (0x11U < (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__counter))) 
-                          | ((1U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state)) 
-                             & (4U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__run_cycle_counter))))))) {
+        if (VL_UNLIKELY((((4U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state)) 
+                          || ((2U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state))
+                               ? (0U != (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__cnt))
+                               : (4U == (0x3fU & VL_MODDIV_III(6, (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__cnt), (IData)(5U))))))))) {
             VL_WRITEF_NX("[%0t] %%Error: test_fsm.sv:59: Assertion failed in %Ntest_fsm.test_fsm_states.unnamedblk1: FSM nlfsr3_ce active on non-5th cycle during RUN state\n",0,
                          64,VL_TIME_UNITED_Q(1000),
                          -9,vlSymsp->name());
@@ -343,10 +343,10 @@ VL_INLINE_OPT VlCoroutine Vtest_fsm___024root___eval_initial__TOP__Vtiming__0(Vt
                                                          "test_fsm.sv", 
                                                          53);
     if (vlSymsp->_vm_contextp__->assertOnGet(2, 1)) {
-        if (VL_UNLIKELY(((((2U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state)) 
-                           & (0x11U < (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__counter))) 
-                          | ((1U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state)) 
-                             & (4U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__run_cycle_counter))))))) {
+        if (VL_UNLIKELY((((4U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state)) 
+                          || ((2U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state))
+                               ? (0U != (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__cnt))
+                               : (4U == (0x3fU & VL_MODDIV_III(6, (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__cnt), (IData)(5U))))))))) {
             VL_WRITEF_NX("[%0t] %%Error: test_fsm.sv:59: Assertion failed in %Ntest_fsm.test_fsm_states.unnamedblk1: FSM nlfsr3_ce active on non-5th cycle during RUN state\n",0,
                          64,VL_TIME_UNITED_Q(1000),
                          -9,vlSymsp->name());
@@ -359,10 +359,10 @@ VL_INLINE_OPT VlCoroutine Vtest_fsm___024root___eval_initial__TOP__Vtiming__0(Vt
                                                          "test_fsm.sv", 
                                                          53);
     if (vlSymsp->_vm_contextp__->assertOnGet(2, 1)) {
-        if (VL_UNLIKELY(((((2U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state)) 
-                           & (0x11U < (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__counter))) 
-                          | ((1U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state)) 
-                             & (4U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__run_cycle_counter))))))) {
+        if (VL_UNLIKELY((((4U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state)) 
+                          || ((2U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state))
+                               ? (0U != (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__cnt))
+                               : (4U == (0x3fU & VL_MODDIV_III(6, (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__cnt), (IData)(5U))))))))) {
             VL_WRITEF_NX("[%0t] %%Error: test_fsm.sv:59: Assertion failed in %Ntest_fsm.test_fsm_states.unnamedblk1: FSM nlfsr3_ce active on non-5th cycle during RUN state\n",0,
                          64,VL_TIME_UNITED_Q(1000),
                          -9,vlSymsp->name());
@@ -375,10 +375,10 @@ VL_INLINE_OPT VlCoroutine Vtest_fsm___024root___eval_initial__TOP__Vtiming__0(Vt
                                                          "test_fsm.sv", 
                                                          53);
     if (vlSymsp->_vm_contextp__->assertOnGet(2, 1)) {
-        if (VL_UNLIKELY(((((2U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state)) 
-                           & (0x11U < (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__counter))) 
-                          | ((1U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state)) 
-                             & (4U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__run_cycle_counter))))))) {
+        if (VL_UNLIKELY((((4U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state)) 
+                          || ((2U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state))
+                               ? (0U != (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__cnt))
+                               : (4U == (0x3fU & VL_MODDIV_III(6, (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__cnt), (IData)(5U))))))))) {
             VL_WRITEF_NX("[%0t] %%Error: test_fsm.sv:59: Assertion failed in %Ntest_fsm.test_fsm_states.unnamedblk1: FSM nlfsr3_ce active on non-5th cycle during RUN state\n",0,
                          64,VL_TIME_UNITED_Q(1000),
                          -9,vlSymsp->name());
@@ -391,10 +391,11 @@ VL_INLINE_OPT VlCoroutine Vtest_fsm___024root___eval_initial__TOP__Vtiming__0(Vt
                                                          "test_fsm.sv", 
                                                          53);
     if (vlSymsp->_vm_contextp__->assertOnGet(2, 1)) {
-        if (VL_UNLIKELY(((1U & (~ (((2U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state)) 
-                                    & (0x11U < (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__counter))) 
-                                   | ((1U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state)) 
-                                      & (4U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__run_cycle_counter))))))))) {
+        if (VL_UNLIKELY(((1U & (~ ((4U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state)) 
+                                   || ((2U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state))
+                                        ? (0U != (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__cnt))
+                                        : (4U == (0x3fU 
+                                                  & VL_MODDIV_III(6, (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__cnt), (IData)(5U))))))))))) {
             VL_WRITEF_NX("[%0t] %%Error: test_fsm.sv:56: Assertion failed in %Ntest_fsm.test_fsm_states.unnamedblk1: FSM nlfsr3_ce not active on 5th cycle during RUN state\n",0,
                          64,VL_TIME_UNITED_Q(1000),
                          -9,vlSymsp->name());
@@ -407,10 +408,10 @@ VL_INLINE_OPT VlCoroutine Vtest_fsm___024root___eval_initial__TOP__Vtiming__0(Vt
                                                          "test_fsm.sv", 
                                                          53);
     if (vlSymsp->_vm_contextp__->assertOnGet(2, 1)) {
-        if (VL_UNLIKELY(((((2U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state)) 
-                           & (0x11U < (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__counter))) 
-                          | ((1U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state)) 
-                             & (4U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__run_cycle_counter))))))) {
+        if (VL_UNLIKELY((((4U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state)) 
+                          || ((2U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state))
+                               ? (0U != (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__cnt))
+                               : (4U == (0x3fU & VL_MODDIV_III(6, (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__cnt), (IData)(5U))))))))) {
             VL_WRITEF_NX("[%0t] %%Error: test_fsm.sv:59: Assertion failed in %Ntest_fsm.test_fsm_states.unnamedblk1: FSM nlfsr3_ce active on non-5th cycle during RUN state\n",0,
                          64,VL_TIME_UNITED_Q(1000),
                          -9,vlSymsp->name());
@@ -423,10 +424,10 @@ VL_INLINE_OPT VlCoroutine Vtest_fsm___024root___eval_initial__TOP__Vtiming__0(Vt
                                                          "test_fsm.sv", 
                                                          53);
     if (vlSymsp->_vm_contextp__->assertOnGet(2, 1)) {
-        if (VL_UNLIKELY(((((2U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state)) 
-                           & (0x11U < (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__counter))) 
-                          | ((1U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state)) 
-                             & (4U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__run_cycle_counter))))))) {
+        if (VL_UNLIKELY((((4U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state)) 
+                          || ((2U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state))
+                               ? (0U != (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__cnt))
+                               : (4U == (0x3fU & VL_MODDIV_III(6, (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__cnt), (IData)(5U))))))))) {
             VL_WRITEF_NX("[%0t] %%Error: test_fsm.sv:59: Assertion failed in %Ntest_fsm.test_fsm_states.unnamedblk1: FSM nlfsr3_ce active on non-5th cycle during RUN state\n",0,
                          64,VL_TIME_UNITED_Q(1000),
                          -9,vlSymsp->name());
@@ -439,10 +440,10 @@ VL_INLINE_OPT VlCoroutine Vtest_fsm___024root___eval_initial__TOP__Vtiming__0(Vt
                                                          "test_fsm.sv", 
                                                          53);
     if (vlSymsp->_vm_contextp__->assertOnGet(2, 1)) {
-        if (VL_UNLIKELY(((((2U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state)) 
-                           & (0x11U < (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__counter))) 
-                          | ((1U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state)) 
-                             & (4U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__run_cycle_counter))))))) {
+        if (VL_UNLIKELY((((4U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state)) 
+                          || ((2U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state))
+                               ? (0U != (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__cnt))
+                               : (4U == (0x3fU & VL_MODDIV_III(6, (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__cnt), (IData)(5U))))))))) {
             VL_WRITEF_NX("[%0t] %%Error: test_fsm.sv:59: Assertion failed in %Ntest_fsm.test_fsm_states.unnamedblk1: FSM nlfsr3_ce active on non-5th cycle during RUN state\n",0,
                          64,VL_TIME_UNITED_Q(1000),
                          -9,vlSymsp->name());
@@ -455,10 +456,10 @@ VL_INLINE_OPT VlCoroutine Vtest_fsm___024root___eval_initial__TOP__Vtiming__0(Vt
                                                          "test_fsm.sv", 
                                                          53);
     if (vlSymsp->_vm_contextp__->assertOnGet(2, 1)) {
-        if (VL_UNLIKELY(((((2U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state)) 
-                           & (0x11U < (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__counter))) 
-                          | ((1U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state)) 
-                             & (4U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__run_cycle_counter))))))) {
+        if (VL_UNLIKELY((((4U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state)) 
+                          || ((2U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state))
+                               ? (0U != (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__cnt))
+                               : (4U == (0x3fU & VL_MODDIV_III(6, (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__cnt), (IData)(5U))))))))) {
             VL_WRITEF_NX("[%0t] %%Error: test_fsm.sv:59: Assertion failed in %Ntest_fsm.test_fsm_states.unnamedblk1: FSM nlfsr3_ce active on non-5th cycle during RUN state\n",0,
                          64,VL_TIME_UNITED_Q(1000),
                          -9,vlSymsp->name());
@@ -471,10 +472,11 @@ VL_INLINE_OPT VlCoroutine Vtest_fsm___024root___eval_initial__TOP__Vtiming__0(Vt
                                                          "test_fsm.sv", 
                                                          53);
     if (vlSymsp->_vm_contextp__->assertOnGet(2, 1)) {
-        if (VL_UNLIKELY(((1U & (~ (((2U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state)) 
-                                    & (0x11U < (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__counter))) 
-                                   | ((1U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state)) 
-                                      & (4U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__run_cycle_counter))))))))) {
+        if (VL_UNLIKELY(((1U & (~ ((4U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state)) 
+                                   || ((2U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state))
+                                        ? (0U != (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__cnt))
+                                        : (4U == (0x3fU 
+                                                  & VL_MODDIV_III(6, (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__cnt), (IData)(5U))))))))))) {
             VL_WRITEF_NX("[%0t] %%Error: test_fsm.sv:56: Assertion failed in %Ntest_fsm.test_fsm_states.unnamedblk1: FSM nlfsr3_ce not active on 5th cycle during RUN state\n",0,
                          64,VL_TIME_UNITED_Q(1000),
                          -9,vlSymsp->name());

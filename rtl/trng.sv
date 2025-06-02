@@ -11,9 +11,10 @@ module trng (
     logic a0, b0;
     logic [4:0] s;
     logic warbler_bit; // Internal 1-bit signal for the output
+    logic output_en;
 
     // FSM
-    fsm fsm (.clk(clk), .rst(rst), .load_en(load_en), .init_en(init_en), .run_en(run_en), .nlfsr3_ce(nlfsr3_ce));
+    fsm fsm (.clk(clk), .rst(rst), .load_en(load_en), .init_en(init_en), .run_en(run_en), .nlfsr3_ce(nlfsr3_ce), .output_en(output_en));
     
     // NLFSRs and shift register
     NLFSR1 nlfsr1 (.clk(clk), .rst(rst), .warbler_o(warbler_bit), .nlfsr3_ce(nlfsr3_ce), .d1(d1), .init(init_en), .load(load_en), .a0(a0));
@@ -25,5 +26,5 @@ module trng (
     assign o_warbler = warbler_bit;
     
     // valid output = NLFSR3 chip-enable
-    assign o_valid = nlfsr3_ce;
+    assign o_valid = nlfsr3_ce & output_en;
 endmodule

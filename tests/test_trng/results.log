@@ -1,4 +1,7 @@
 Testing TRNG top module...
-[2215000] %Error: test_trng.sv:57: Assertion failed in test_trng.test_trng_basic_operation: TRNG o_valid not active during INIT state
-%Error: test_trng.sv:57: Verilog $stop
-Aborting...
+TRNG o_warbler high: 91, low: 97, diff: 6
+TRNG test completed!
+- test_trng.sv:122: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.034 2025-02-24
+- Verilator: $finish at 13us; walltime 0.003 s; speed 3.448 ms/s
+- Verilator: cpu 0.004 s on 1 threads; alloced 121 MB

@@ -30,7 +30,6 @@ VM_CLASSES_FAST += \
 
 # Generated module classes, non-fast-path, compile with low/medium optimization
 VM_CLASSES_SLOW += \
-	Vtest_fsm__ConstPool_0 \
 	Vtest_fsm___024root__Slow \
 	Vtest_fsm___024root__DepSet_hc8c255e1__0__Slow \
 	Vtest_fsm___024root__DepSet_h9d89eb6d__0__Slow \

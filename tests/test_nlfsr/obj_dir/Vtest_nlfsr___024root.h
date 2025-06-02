@@ -34,14 +34,13 @@ class alignas(VL_CACHE_LINE_BYTES) Vtest_nlfsr___024root final : public Verilate
     CData/*4:0*/ test_nlfsr__DOT__tk;
     CData/*0:0*/ test_nlfsr__DOT__NLFSR1__DOT__mux1_in;
     CData/*0:0*/ test_nlfsr__DOT__NLFSR2__DOT__mux1_in;
+    CData/*4:0*/ test_nlfsr__DOT__NLFSR3__DOT__next_C5;
     CData/*4:0*/ test_nlfsr__DOT__NLFSR3__DOT__C5;
     CData/*4:0*/ test_nlfsr__DOT__NLFSR3__DOT__C4;
     CData/*4:0*/ test_nlfsr__DOT__NLFSR3__DOT__C3;
     CData/*4:0*/ test_nlfsr__DOT__NLFSR3__DOT__C2;
     CData/*4:0*/ test_nlfsr__DOT__NLFSR3__DOT__C1;
     CData/*4:0*/ test_nlfsr__DOT__NLFSR3__DOT__C0;
-    CData/*4:0*/ test_nlfsr__DOT__NLFSR3__DOT__sumL;
-    CData/*4:0*/ test_nlfsr__DOT__NLFSR3__DOT__sumR;
     CData/*0:0*/ test_nlfsr__DOT__NLFSR3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4;
     CData/*0:0*/ __VdlyVal__test_nlfsr__DOT__clk__v0;
     CData/*0:0*/ __VdlySet__test_nlfsr__DOT__clk__v0;

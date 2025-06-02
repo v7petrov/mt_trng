@@ -113,19 +113,19 @@ $timescale 1ps $end
    $var wire 5 1 d3 [4:0] $end
    $var wire 5 2 tk [4:0] $end
    $var wire 1 @ o_warbler $end
+   $var wire 5 ; next_C5 [4:0] $end
    $var wire 5 I C5 [4:0] $end
    $var wire 5 J C4 [4:0] $end
    $var wire 5 K C3 [4:0] $end
    $var wire 5 L C2 [4:0] $end
    $var wire 5 M C1 [4:0] $end
    $var wire 5 N C0 [4:0] $end
-   $var wire 1 O wgt2_5o $end
-   $var wire 5 P pad_wgt2 [4:0] $end
-   $var wire 5 Q gamma_out [4:0] $end
-   $var wire 5 ; sumL [4:0] $end
-   $var wire 5 R sumR [4:0] $end
-   $var wire 5 < feedback [4:0] $end
-   $var wire 5 = next_C5 [4:0] $end
+   $var wire 5 O node1 [4:0] $end
+   $var wire 5 < node2 [4:0] $end
+   $var wire 5 = node3 [4:0] $end
+   $var wire 5 P gamma_out [4:0] $end
+   $var wire 1 Q wgt2_5o $end
+   $var wire 5 R pad_wgt2 [4:0] $end
    $scope module WGT1_5_inst $end
     $var wire 5 M address [4:0] $end
     $var wire 1 @ wgt1_5o $end
@@ -133,18 +133,18 @@ $timescale 1ps $end
    $upscope $end
    $scope module WGT2_5_inst $end
     $var wire 5 I address [4:0] $end
-    $var wire 1 O wgt2_5o $end
+    $var wire 1 Q wgt2_5o $end
     $var wire 32 W LUT [31:0] $end
    $upscope $end
    $scope module bigmux2to1_inst $end
     $var wire 1 . sel $end
-    $var wire 5 < a [4:0] $end
+    $var wire 5 = a [4:0] $end
     $var wire 5 1 b [4:0] $end
-    $var wire 5 = y [4:0] $end
+    $var wire 5 ; y [4:0] $end
    $upscope $end
    $scope module gamma_mult_inst $end
-    $var wire 5 P x [4:0] $end
-    $var wire 5 Q y [4:0] $end
+    $var wire 5 R x [4:0] $end
+    $var wire 5 P y [4:0] $end
    $upscope $end
   $upscope $end
  $upscope $end
@@ -176,8 +176,8 @@ b00000 2
 08
 19
 1:
-b00001 ;
-b01101 <
+b01101 ;
+b01100 <
 b01101 =
 0>
 0?
@@ -196,10 +196,10 @@ b00000 K
 b00000 L
 b00000 M
 b00000 N
-1O
-b00001 P
-b01100 Q
-b01100 R
+b01100 O
+b01100 P
+1Q
+b00001 R
 0S
 b00000000000000000000000000001010 T
 0U
@@ -354,8 +354,8 @@ b00101 2
 18
 19
 1:
-b00100 ;
-b01000 <
+b01000 ;
+b01001 <
 b01000 =
 b00000000000000000 A
 1B
@@ -378,10 +378,10 @@ b00101 <
 b00101 =
 b10000000000000000 A
 b1000000000000000 E
-b00101 I
-0O
+b01000 I
+b00000 O
 b00000 P
-b00000 Q
+0Q
 b00000 R
 1S
 #140000
@@ -395,31 +395,31 @@ b11000000000000000 A
 0C
 b10000 D
 b1100000000000000 E
-b01101 I
-b00101 J
+b00101 I
+b01000 J
 1S
 #150000
 1.
 b00011 1
-b00011 =
+b00011 ;
 0S
 #155000
-b00100 ;
-b01000 <
+b01001 <
+b01000 =
 b11100000000000000 A
 b1110000000000000 E
 b00011 I
-b01101 J
-b00101 K
-1O
-b00001 P
-b01100 Q
-b01100 R
+b00101 J
+b01000 K
+b01100 O
+b01100 P
+1Q
+b00001 R
 1S
 #160000
 0.
 00
-b01000 =
+b01000 ;
 0S
 #165000
 07
@@ -441,27 +441,29 @@ b00101 <
 b00101 =
 b11111000000000000 A
 b0111100000000000 E
-b01101 I
+b01000 I
 b00011 J
-b01101 K
-b00101 L
-0O
+b00101 K
+b01000 L
+b00000 O
 b00000 P
-b00000 Q
+0Q
 b00000 R
 1S
 #180000
 0S
 #185000
-b00000 <
-b00000 =
+b01101 ;
+b01101 <
+b01101 =
 b11111100000000000 A
 b0011110000000000 E
-b01101 J
+b00101 I
+b01000 J
 b00011 K
-b01101 L
-b00101 M
-b00101 R
+b00101 L
+b01000 M
+b01000 O
 1S
 #190000
 0S
@@ -472,8 +474,9 @@ b00101 R
 18
 19
 1:
-b01000 <
-b01000 =
+b00000 ;
+b00000 <
+b00000 =
 b11111110000000000 A
 1B
 1C
@@ -482,11 +485,13 @@ b0001111000000000 E
 1F
 1G
 b11000 H
-b01101 K
+b01101 I
+b00101 J
+b01000 K
 b00011 L
-b01101 M
-b00101 N
-b01101 R
+b00101 M
+b01000 N
+b00101 O
 1S
 #200000
 0S

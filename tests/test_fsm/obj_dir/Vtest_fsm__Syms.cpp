@@ -43,7 +43,7 @@ Vtest_fsm__Syms::Vtest_fsm__Syms(VerilatedContext* contextp, const char* namep, 
     , TOP{this, namep}
 {
         // Check resources
-        Verilated::stackCheck(42);
+        Verilated::stackCheck(27);
     // Configure time unit / time precision
     _vm_contextp__->timeunit(-9);
     _vm_contextp__->timeprecision(-12);
