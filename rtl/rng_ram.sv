@@ -1,3 +1,4 @@
+`timescale 1ns/1ps
 module rng_ram (
     input  wire        clk_i,
     input  wire        rst_i,

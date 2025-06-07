@@ -1,3 +1,4 @@
+`timescale 1ns/1ps
 module trng_parallel32 (
     input  logic        clk,
     input  logic        rst,
