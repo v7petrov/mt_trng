@@ -608,10 +608,16 @@ VL_INLINE_OPT void Vtest_bitcollect___024root___nba_sequent__TOP__2(Vtest_bitcol
     }
 }
 
+extern const VlUnpacked<CData/*0:0*/, 256> Vtest_bitcollect__ConstPool__TABLE_heab3c15f_0;
+extern const VlUnpacked<CData/*0:0*/, 256> Vtest_bitcollect__ConstPool__TABLE_h586c1205_0;
+
 VL_INLINE_OPT void Vtest_bitcollect___024root___nba_sequent__TOP__3(Vtest_bitcollect___024root* vlSelf) {
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtest_bitcollect___024root___nba_sequent__TOP__3\n"); );
     Vtest_bitcollect__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
+    // Init
+    CData/*7:0*/ __Vtableidx1;
+    __Vtableidx1 = 0;
     // Body
     if (vlSelfRef.test_bitcollect__DOT__rst) {
         vlSelfRef.__Vdly__test_bitcollect__DOT__collector__DOT__shift_reg = 0U;
@@ -623,45 +629,54 @@ VL_INLINE_OPT void Vtest_bitcollect___024root___nba_sequent__TOP__3(Vtest_bitcol
         vlSelfRef.test_bitcollect__DOT__trng_inst__DOT__nlfsr3__DOT__C3 = 0U;
         vlSelfRef.test_bitcollect__DOT__trng_inst__DOT__nlfsr3__DOT__C4 = 0U;
         vlSelfRef.test_bitcollect__DOT__trng_inst__DOT__nlfsr3__DOT__C5 = 0U;
-    } else if (vlSelfRef.test_bitcollect__DOT__trng_inst__DOT__nlfsr3_ce) {
-        vlSelfRef.__Vdly__test_bitcollect__DOT__collector__DOT__shift_reg 
-            = ((0xfeU & ((IData)(vlSelfRef.test_bitcollect__DOT__collector__DOT__shift_reg) 
-                         << 1U)) | (1U & (0x2778a365U 
-                                          >> (IData)(vlSelfRef.test_bitcollect__DOT__trng_inst__DOT__nlfsr3__DOT__C1))));
-        vlSelfRef.__Vdly__test_bitcollect__DOT__collector__DOT__bit_count 
-            = (7U & ((IData)(1U) + (IData)(vlSelfRef.test_bitcollect__DOT__collector__DOT__bit_count)));
-        if ((7U == (IData)(vlSelfRef.test_bitcollect__DOT__collector__DOT__bit_count))) {
-            vlSelfRef.test_bitcollect__DOT__rand_byte 
+    } else {
+        if (((IData)(vlSelfRef.test_bitcollect__DOT__trng_inst__DOT__nlfsr3_ce) 
+             & (IData)(vlSelfRef.test_bitcollect__DOT__trng_inst__DOT__output_en))) {
+            vlSelfRef.__Vdly__test_bitcollect__DOT__collector__DOT__shift_reg 
                 = ((0xfeU & ((IData)(vlSelfRef.test_bitcollect__DOT__collector__DOT__shift_reg) 
                              << 1U)) | (1U & (0x2778a365U 
                                               >> (IData)(vlSelfRef.test_bitcollect__DOT__trng_inst__DOT__nlfsr3__DOT__C1))));
-            vlSelfRef.test_bitcollect__DOT__byte_ready = 1U;
-            vlSelfRef.__Vdly__test_bitcollect__DOT__collector__DOT__bit_count = 0U;
+            vlSelfRef.__Vdly__test_bitcollect__DOT__collector__DOT__bit_count 
+                = (7U & ((IData)(1U) + (IData)(vlSelfRef.test_bitcollect__DOT__collector__DOT__bit_count)));
+            if ((7U == (IData)(vlSelfRef.test_bitcollect__DOT__collector__DOT__bit_count))) {
+                vlSelfRef.test_bitcollect__DOT__rand_byte 
+                    = ((0xfeU & ((IData)(vlSelfRef.test_bitcollect__DOT__collector__DOT__shift_reg) 
+                                 << 1U)) | (1U & (0x2778a365U 
+                                                  >> (IData)(vlSelfRef.test_bitcollect__DOT__trng_inst__DOT__nlfsr3__DOT__C1))));
+                vlSelfRef.test_bitcollect__DOT__byte_ready = 1U;
+                vlSelfRef.__Vdly__test_bitcollect__DOT__collector__DOT__bit_count = 0U;
+            } else {
+                vlSelfRef.test_bitcollect__DOT__byte_ready = 0U;
+            }
         } else {
             vlSelfRef.test_bitcollect__DOT__byte_ready = 0U;
         }
-        vlSelfRef.test_bitcollect__DOT__trng_inst__DOT__nlfsr3__DOT__C1 
-            = vlSelfRef.test_bitcollect__DOT__trng_inst__DOT__nlfsr3__DOT__C2;
-        vlSelfRef.test_bitcollect__DOT__trng_inst__DOT__nlfsr3__DOT__C2 
-            = vlSelfRef.test_bitcollect__DOT__trng_inst__DOT__nlfsr3__DOT__C3;
-        vlSelfRef.test_bitcollect__DOT__trng_inst__DOT__nlfsr3__DOT__C3 
-            = vlSelfRef.test_bitcollect__DOT__trng_inst__DOT__nlfsr3__DOT__C4;
-        vlSelfRef.test_bitcollect__DOT__trng_inst__DOT__nlfsr3__DOT__C4 
-            = vlSelfRef.test_bitcollect__DOT__trng_inst__DOT__nlfsr3__DOT__C5;
-        vlSelfRef.test_bitcollect__DOT__trng_inst__DOT__nlfsr3__DOT__C5 
-            = vlSelfRef.test_bitcollect__DOT__trng_inst__DOT__nlfsr3__DOT__next_C5;
-    } else {
-        vlSelfRef.test_bitcollect__DOT__byte_ready = 0U;
+        if (vlSelfRef.test_bitcollect__DOT__trng_inst__DOT__nlfsr3_ce) {
+            vlSelfRef.test_bitcollect__DOT__trng_inst__DOT__nlfsr3__DOT__C1 
+                = vlSelfRef.test_bitcollect__DOT__trng_inst__DOT__nlfsr3__DOT__C2;
+            vlSelfRef.test_bitcollect__DOT__trng_inst__DOT__nlfsr3__DOT__C2 
+                = vlSelfRef.test_bitcollect__DOT__trng_inst__DOT__nlfsr3__DOT__C3;
+            vlSelfRef.test_bitcollect__DOT__trng_inst__DOT__nlfsr3__DOT__C3 
+                = vlSelfRef.test_bitcollect__DOT__trng_inst__DOT__nlfsr3__DOT__C4;
+            vlSelfRef.test_bitcollect__DOT__trng_inst__DOT__nlfsr3__DOT__C4 
+                = vlSelfRef.test_bitcollect__DOT__trng_inst__DOT__nlfsr3__DOT__C5;
+            vlSelfRef.test_bitcollect__DOT__trng_inst__DOT__nlfsr3__DOT__C5 
+                = vlSelfRef.test_bitcollect__DOT__trng_inst__DOT__nlfsr3__DOT__next_C5;
+        }
     }
     vlSelfRef.test_bitcollect__DOT__collector__DOT__shift_reg 
         = vlSelfRef.__Vdly__test_bitcollect__DOT__collector__DOT__shift_reg;
     vlSelfRef.test_bitcollect__DOT__collector__DOT__bit_count 
         = vlSelfRef.__Vdly__test_bitcollect__DOT__collector__DOT__bit_count;
+    __Vtableidx1 = (((IData)(vlSelfRef.test_bitcollect__DOT__trng_inst__DOT__fsm__DOT__cnt) 
+                     << 2U) | (((2U == (IData)(vlSelfRef.test_bitcollect__DOT__trng_inst__DOT__fsm__DOT__state)) 
+                                << 1U) | (4U == (IData)(vlSelfRef.test_bitcollect__DOT__trng_inst__DOT__fsm__DOT__state))));
     vlSelfRef.test_bitcollect__DOT__trng_inst__DOT__nlfsr3_ce 
-        = ((4U == (IData)(vlSelfRef.test_bitcollect__DOT__trng_inst__DOT__fsm__DOT__state)) 
-           || ((2U == (IData)(vlSelfRef.test_bitcollect__DOT__trng_inst__DOT__fsm__DOT__state))
-                ? (0U != (IData)(vlSelfRef.test_bitcollect__DOT__trng_inst__DOT__fsm__DOT__cnt))
-                : (4U == (0x3fU & VL_MODDIV_III(6, (IData)(vlSelfRef.test_bitcollect__DOT__trng_inst__DOT__fsm__DOT__cnt), (IData)(5U))))));
+        = Vtest_bitcollect__ConstPool__TABLE_heab3c15f_0
+        [__Vtableidx1];
+    vlSelfRef.test_bitcollect__DOT__trng_inst__DOT__output_en 
+        = Vtest_bitcollect__ConstPool__TABLE_h586c1205_0
+        [__Vtableidx1];
     vlSelfRef.test_bitcollect__DOT__trng_inst__DOT__nlfsr3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4 = 0U;
 }
 

@@ -5,6 +5,7 @@
 #include "Vtest_bitcollect___024root__DepSet_h25fe4ac1__0.cpp"
 #include "Vtest_bitcollect__main.cpp"
 #include "Vtest_bitcollect__Trace__0.cpp"
+#include "Vtest_bitcollect__ConstPool_0.cpp"
 #include "Vtest_bitcollect___024root__Slow.cpp"
 #include "Vtest_bitcollect___024root__DepSet_had22cdb0__0__Slow.cpp"
 #include "Vtest_bitcollect___024root__DepSet_h25fe4ac1__0__Slow.cpp"

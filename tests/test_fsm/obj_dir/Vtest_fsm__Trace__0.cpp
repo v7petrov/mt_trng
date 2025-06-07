@@ -27,16 +27,13 @@ void Vtest_fsm___024root__trace_chg_0_sub_0(Vtest_fsm___024root* vlSelf, Verilat
         bufp->chgBit(oldp+0,((4U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state))));
         bufp->chgBit(oldp+1,((2U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state))));
         bufp->chgBit(oldp+2,((1U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state))));
-        bufp->chgBit(oldp+3,(((4U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state)) 
-                              || ((2U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state))
-                                   ? (0U != (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__cnt))
-                                   : (4U == (0x3fU 
-                                             & VL_MODDIV_III(6, (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__cnt), (IData)(5U))))))));
-        bufp->chgCData(oldp+4,(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state),3);
-        bufp->chgCData(oldp+5,(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__cnt),6);
+        bufp->chgBit(oldp+3,(vlSelfRef.test_fsm__DOT__fsm_nlfsr3_ce));
+        bufp->chgBit(oldp+4,(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__output_en));
+        bufp->chgCData(oldp+5,(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state),3);
+        bufp->chgCData(oldp+6,(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__cnt),6);
     }
-    bufp->chgBit(oldp+6,(vlSelfRef.test_fsm__DOT__clk));
-    bufp->chgBit(oldp+7,(vlSelfRef.test_fsm__DOT__rst));
+    bufp->chgBit(oldp+7,(vlSelfRef.test_fsm__DOT__clk));
+    bufp->chgBit(oldp+8,(vlSelfRef.test_fsm__DOT__rst));
 }
 
 void Vtest_fsm___024root__trace_cleanup(void* voidSelf, VerilatedVcd* /*unused*/) {

@@ -13,7 +13,7 @@ module test_fsm;
   
   // Waveform generation
   initial begin
-    $dumpfile("test_fsm.vcd");
+    $dumpfile("test_aesfsm.vcd");
     $dumpvars(0, test_fsm);
   end
   

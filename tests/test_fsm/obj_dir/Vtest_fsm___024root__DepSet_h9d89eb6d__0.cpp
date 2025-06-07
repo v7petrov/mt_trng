@@ -62,11 +62,16 @@ void Vtest_fsm___024root___eval_nba(Vtest_fsm___024root* vlSelf) {
     }
 }
 
+extern const VlUnpacked<CData/*0:0*/, 256> Vtest_fsm__ConstPool__TABLE_heab3c15f_0;
+extern const VlUnpacked<CData/*0:0*/, 256> Vtest_fsm__ConstPool__TABLE_h586c1205_0;
+
 VL_INLINE_OPT void Vtest_fsm___024root___nba_sequent__TOP__0(Vtest_fsm___024root* vlSelf) {
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtest_fsm___024root___nba_sequent__TOP__0\n"); );
     Vtest_fsm__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Init
+    CData/*7:0*/ __Vtableidx1;
+    __Vtableidx1 = 0;
     CData/*2:0*/ __Vdly__test_fsm__DOT__fsm_inst__DOT__state;
     __Vdly__test_fsm__DOT__fsm_inst__DOT__state = 0;
     CData/*5:0*/ __Vdly__test_fsm__DOT__fsm_inst__DOT__cnt;
@@ -105,6 +110,13 @@ VL_INLINE_OPT void Vtest_fsm___024root___nba_sequent__TOP__0(Vtest_fsm___024root
     }
     vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state = __Vdly__test_fsm__DOT__fsm_inst__DOT__state;
     vlSelfRef.test_fsm__DOT__fsm_inst__DOT__cnt = __Vdly__test_fsm__DOT__fsm_inst__DOT__cnt;
+    __Vtableidx1 = (((IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__cnt) 
+                     << 2U) | (((2U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state)) 
+                                << 1U) | (4U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state))));
+    vlSelfRef.test_fsm__DOT__fsm_nlfsr3_ce = Vtest_fsm__ConstPool__TABLE_heab3c15f_0
+        [__Vtableidx1];
+    vlSelfRef.test_fsm__DOT__fsm_inst__DOT__output_en 
+        = Vtest_fsm__ConstPool__TABLE_h586c1205_0[__Vtableidx1];
 }
 
 VL_INLINE_OPT void Vtest_fsm___024root___nba_sequent__TOP__1(Vtest_fsm___024root* vlSelf) {

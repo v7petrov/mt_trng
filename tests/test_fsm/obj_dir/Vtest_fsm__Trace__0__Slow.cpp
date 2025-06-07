@@ -12,25 +12,26 @@ VL_ATTR_COLD void Vtest_fsm___024root__trace_init_sub__TOP__0(Vtest_fsm___024roo
     const int c = vlSymsp->__Vm_baseCode;
     // Body
     tracep->pushPrefix("test_fsm", VerilatedTracePrefixType::SCOPE_MODULE);
-    tracep->declBit(c+7,0,"clk",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1);
-    tracep->declBit(c+8,0,"rst",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1);
-    tracep->declBus(c+9,0,"CLK_PERIOD",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::PARAMETER, VerilatedTraceSigType::LOGIC, false,-1, 31,0);
+    tracep->declBit(c+8,0,"clk",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1);
+    tracep->declBit(c+9,0,"rst",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1);
+    tracep->declBus(c+10,0,"CLK_PERIOD",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::PARAMETER, VerilatedTraceSigType::LOGIC, false,-1, 31,0);
     tracep->declBit(c+1,0,"fsm_load_en",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1);
     tracep->declBit(c+2,0,"fsm_init_en",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1);
     tracep->declBit(c+3,0,"fsm_run_en",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1);
     tracep->declBit(c+4,0,"fsm_nlfsr3_ce",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1);
     tracep->pushPrefix("fsm_inst", VerilatedTracePrefixType::SCOPE_MODULE);
-    tracep->declBit(c+7,0,"clk",-1, VerilatedTraceSigDirection::INPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1);
-    tracep->declBit(c+8,0,"rst",-1, VerilatedTraceSigDirection::INPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1);
+    tracep->declBit(c+8,0,"clk",-1, VerilatedTraceSigDirection::INPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1);
+    tracep->declBit(c+9,0,"rst",-1, VerilatedTraceSigDirection::INPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1);
     tracep->declBit(c+1,0,"load_en",-1, VerilatedTraceSigDirection::OUTPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1);
     tracep->declBit(c+2,0,"init_en",-1, VerilatedTraceSigDirection::OUTPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1);
     tracep->declBit(c+3,0,"run_en",-1, VerilatedTraceSigDirection::OUTPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1);
     tracep->declBit(c+4,0,"nlfsr3_ce",-1, VerilatedTraceSigDirection::OUTPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1);
-    tracep->declBus(c+10,0,"LOAD",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::PARAMETER, VerilatedTraceSigType::LOGIC, false,-1, 2,0);
-    tracep->declBus(c+11,0,"INIT",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::PARAMETER, VerilatedTraceSigType::LOGIC, false,-1, 2,0);
-    tracep->declBus(c+12,0,"RUN",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::PARAMETER, VerilatedTraceSigType::LOGIC, false,-1, 2,0);
-    tracep->declBus(c+5,0,"state",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1, 2,0);
-    tracep->declBus(c+6,0,"cnt",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1, 5,0);
+    tracep->declBit(c+5,0,"output_en",-1, VerilatedTraceSigDirection::OUTPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1);
+    tracep->declBus(c+11,0,"LOAD",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::PARAMETER, VerilatedTraceSigType::LOGIC, false,-1, 2,0);
+    tracep->declBus(c+12,0,"INIT",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::PARAMETER, VerilatedTraceSigType::LOGIC, false,-1, 2,0);
+    tracep->declBus(c+13,0,"RUN",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::PARAMETER, VerilatedTraceSigType::LOGIC, false,-1, 2,0);
+    tracep->declBus(c+6,0,"state",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1, 2,0);
+    tracep->declBus(c+7,0,"cnt",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1, 5,0);
     tracep->popPrefix();
     tracep->popPrefix();
 }
@@ -77,10 +78,10 @@ VL_ATTR_COLD void Vtest_fsm___024root__trace_const_0_sub_0(Vtest_fsm___024root* 
     // Init
     uint32_t* const oldp VL_ATTR_UNUSED = bufp->oldp(vlSymsp->__Vm_baseCode);
     // Body
-    bufp->fullIData(oldp+9,(0xaU),32);
-    bufp->fullCData(oldp+10,(4U),3);
-    bufp->fullCData(oldp+11,(2U),3);
-    bufp->fullCData(oldp+12,(1U),3);
+    bufp->fullIData(oldp+10,(0xaU),32);
+    bufp->fullCData(oldp+11,(4U),3);
+    bufp->fullCData(oldp+12,(2U),3);
+    bufp->fullCData(oldp+13,(1U),3);
 }
 
 VL_ATTR_COLD void Vtest_fsm___024root__trace_full_0_sub_0(Vtest_fsm___024root* vlSelf, VerilatedVcd::Buffer* bufp);
@@ -104,12 +105,10 @@ VL_ATTR_COLD void Vtest_fsm___024root__trace_full_0_sub_0(Vtest_fsm___024root* v
     bufp->fullBit(oldp+1,((4U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state))));
     bufp->fullBit(oldp+2,((2U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state))));
     bufp->fullBit(oldp+3,((1U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state))));
-    bufp->fullBit(oldp+4,(((4U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state)) 
-                           || ((2U == (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state))
-                                ? (0U != (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__cnt))
-                                : (4U == (0x3fU & VL_MODDIV_III(6, (IData)(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__cnt), (IData)(5U))))))));
-    bufp->fullCData(oldp+5,(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state),3);
-    bufp->fullCData(oldp+6,(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__cnt),6);
-    bufp->fullBit(oldp+7,(vlSelfRef.test_fsm__DOT__clk));
-    bufp->fullBit(oldp+8,(vlSelfRef.test_fsm__DOT__rst));
+    bufp->fullBit(oldp+4,(vlSelfRef.test_fsm__DOT__fsm_nlfsr3_ce));
+    bufp->fullBit(oldp+5,(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__output_en));
+    bufp->fullCData(oldp+6,(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__state),3);
+    bufp->fullCData(oldp+7,(vlSelfRef.test_fsm__DOT__fsm_inst__DOT__cnt),6);
+    bufp->fullBit(oldp+8,(vlSelfRef.test_fsm__DOT__clk));
+    bufp->fullBit(oldp+9,(vlSelfRef.test_fsm__DOT__rst));
 }

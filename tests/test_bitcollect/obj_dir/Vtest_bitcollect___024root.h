@@ -24,6 +24,7 @@ class alignas(VL_CACHE_LINE_BYTES) Vtest_bitcollect___024root final : public Ver
     CData/*7:0*/ test_bitcollect__DOT__rand_byte;
     CData/*0:0*/ test_bitcollect__DOT__trng_inst__DOT__nlfsr3_ce;
     CData/*4:0*/ test_bitcollect__DOT__trng_inst__DOT__s;
+    CData/*0:0*/ test_bitcollect__DOT__trng_inst__DOT__output_en;
     CData/*2:0*/ test_bitcollect__DOT__trng_inst__DOT__fsm__DOT__state;
     CData/*5:0*/ test_bitcollect__DOT__trng_inst__DOT__fsm__DOT__cnt;
     CData/*0:0*/ test_bitcollect__DOT__trng_inst__DOT__nlfsr1__DOT__mux1_in;

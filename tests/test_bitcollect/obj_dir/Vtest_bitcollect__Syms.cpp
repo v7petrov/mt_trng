@@ -43,7 +43,7 @@ Vtest_bitcollect__Syms::Vtest_bitcollect__Syms(VerilatedContext* contextp, const
     , TOP{this, namep}
 {
         // Check resources
-        Verilated::stackCheck(50);
+        Verilated::stackCheck(54);
     // Configure time unit / time precision
     _vm_contextp__->timeunit(-9);
     _vm_contextp__->timeprecision(-12);
