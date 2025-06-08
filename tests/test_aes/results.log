@@ -1,5 +1,0 @@
-[TB] FSM completed AES flow at time 515000
-- test_aes.sv:116: Verilog $finish
-- S i m u l a t i o n   R e p o r t: Verilator 5.034 2025-02-24
-- Verilator: $finish at 540ns; walltime 0.002 s; speed 137.685 us/s
-- Verilator: cpu 0.004 s on 1 threads; alloced 121 MB

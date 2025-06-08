@@ -1,4 +1,16 @@
+VCD info: dumpfile test_aesfsm.vcd opened for output.
 Testing FSM module...
-[195000] %Error: test_fsm.sv:42: Assertion failed in test_fsm.test_fsm_states: FSM did not transition to INIT state after 17 cycles
-%Error: test_fsm.sv:42: Verilog $stop
-Aborting...
+ERROR: test_fsm.sv:42: FSM did not transition to INIT state after 17 cycles
+       Time: 195000  Scope: test_fsm.test_fsm_states
+ERROR: test_fsm.sv:48: FSM did not transition to RUN state after 36 more cycles
+       Time: 555000  Scope: test_fsm.test_fsm_states
+ERROR: test_fsm.sv:59: FSM nlfsr3_ce active on non-5th cycle during RUN state
+       Time: 605000  Scope: test_fsm.test_fsm_states
+ERROR: test_fsm.sv:56: FSM nlfsr3_ce not active on 5th cycle during RUN state
+       Time: 615000  Scope: test_fsm.test_fsm_states
+ERROR: test_fsm.sv:59: FSM nlfsr3_ce active on non-5th cycle during RUN state
+       Time: 655000  Scope: test_fsm.test_fsm_states
+ERROR: test_fsm.sv:56: FSM nlfsr3_ce not active on 5th cycle during RUN state
+       Time: 665000  Scope: test_fsm.test_fsm_states
+FSM test completed!
+test_fsm.sv:83: $finish called at 765000 (1ps)

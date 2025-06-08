@@ -30,5 +30,5 @@ Collected Byte: 0x24 at time 12505000
 TRNG + Bit Collector test completed!
 - test_bitcollect.sv:97: Verilog $finish
 - S i m u l a t i o n   R e p o r t: Verilator 5.034 2025-02-24
-- Verilator: $finish at 13us; walltime 0.002 s; speed 5.852 ms/s
-- Verilator: cpu 0.002 s on 1 threads; alloced 121 MB
+- Verilator: $finish at 13us; walltime 0.002 s; speed 4.854 ms/s
+- Verilator: cpu 0.003 s on 1 threads; alloced 121 MB

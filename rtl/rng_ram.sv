@@ -26,7 +26,7 @@ module rng_ram (
     // RNG write interface
     input  wire        we_rng,            // Trigger random write
     input  wire [8:0]  addr_rng,          // Address to write to
-    output logic       ack_rng            // Ack when random write is complete
+    output logic       ack_rng            //a Ack when random write is complete
 );
 
   // Internal signals for random data
