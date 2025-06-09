@@ -8,8 +8,8 @@
 extern const VlUnpacked<CData/*0:0*/, 256> Vtest_simon__ConstPool__TABLE_heab3c15f_0;
 extern const VlUnpacked<CData/*0:0*/, 256> Vtest_simon__ConstPool__TABLE_h586c1205_0;
 
-VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__0__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+              Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__0__KET____DOT__trng_inst__0\n"); );
+VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__0__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__0__KET____DOT__trng_inst__0\n"); );
     Vtest_simon__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Init
@@ -45,7 +45,6 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
                                                         | (1U 
                                                            & ((IData)(vlSelfRef.__PVT__nlfsr2__DOT__b) 
                                                               >> 4U)))))));
-    vlSelfRef.nlfsr3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4 = 0U;
     vlSelfRef.__PVT__nlfsr3__DOT__wgt2_5o = (1U & (0x41fdc9dU 
                                                    >> (IData)(vlSelfRef.__PVT__nlfsr3__DOT__C5)));
     __Vtableidx1 = (((IData)(vlSelfRef.__PVT__fsm__DOT__cnt) 
@@ -57,8 +56,8 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
         [__Vtableidx1];
 }
 
-VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__1__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+              Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__1__KET____DOT__trng_inst__0\n"); );
+VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__1__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__1__KET____DOT__trng_inst__0\n"); );
     Vtest_simon__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Init
@@ -94,7 +93,6 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
                                                         | (1U 
                                                            & ((IData)(vlSelfRef.__PVT__nlfsr2__DOT__b) 
                                                               >> 4U)))))));
-    vlSelfRef.nlfsr3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4 = 0U;
     vlSelfRef.__PVT__nlfsr3__DOT__wgt2_5o = (1U & (0x41fdc9dU 
                                                    >> (IData)(vlSelfRef.__PVT__nlfsr3__DOT__C5)));
     __Vtableidx2 = (((IData)(vlSelfRef.__PVT__fsm__DOT__cnt) 
@@ -106,8 +104,8 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
         [__Vtableidx2];
 }
 
-VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__2__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+              Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__2__KET____DOT__trng_inst__0\n"); );
+VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__2__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__2__KET____DOT__trng_inst__0\n"); );
     Vtest_simon__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Init
@@ -143,7 +141,6 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
                                                         | (1U 
                                                            & ((IData)(vlSelfRef.__PVT__nlfsr2__DOT__b) 
                                                               >> 4U)))))));
-    vlSelfRef.nlfsr3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4 = 0U;
     vlSelfRef.__PVT__nlfsr3__DOT__wgt2_5o = (1U & (0x41fdc9dU 
                                                    >> (IData)(vlSelfRef.__PVT__nlfsr3__DOT__C5)));
     __Vtableidx3 = (((IData)(vlSelfRef.__PVT__fsm__DOT__cnt) 
@@ -155,8 +152,8 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
         [__Vtableidx3];
 }
 
-VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__3__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+              Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__3__KET____DOT__trng_inst__0\n"); );
+VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__3__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__3__KET____DOT__trng_inst__0\n"); );
     Vtest_simon__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Init
@@ -192,7 +189,6 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
                                                         | (1U 
                                                            & ((IData)(vlSelfRef.__PVT__nlfsr2__DOT__b) 
                                                               >> 4U)))))));
-    vlSelfRef.nlfsr3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4 = 0U;
     vlSelfRef.__PVT__nlfsr3__DOT__wgt2_5o = (1U & (0x41fdc9dU 
                                                    >> (IData)(vlSelfRef.__PVT__nlfsr3__DOT__C5)));
     __Vtableidx4 = (((IData)(vlSelfRef.__PVT__fsm__DOT__cnt) 
@@ -204,8 +200,8 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
         [__Vtableidx4];
 }
 
-VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__4__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+              Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__4__KET____DOT__trng_inst__0\n"); );
+VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__4__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__4__KET____DOT__trng_inst__0\n"); );
     Vtest_simon__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Init
@@ -241,7 +237,6 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
                                                         | (1U 
                                                            & ((IData)(vlSelfRef.__PVT__nlfsr2__DOT__b) 
                                                               >> 4U)))))));
-    vlSelfRef.nlfsr3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4 = 0U;
     vlSelfRef.__PVT__nlfsr3__DOT__wgt2_5o = (1U & (0x41fdc9dU 
                                                    >> (IData)(vlSelfRef.__PVT__nlfsr3__DOT__C5)));
     __Vtableidx5 = (((IData)(vlSelfRef.__PVT__fsm__DOT__cnt) 
@@ -253,8 +248,8 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
         [__Vtableidx5];
 }
 
-VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__5__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+              Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__5__KET____DOT__trng_inst__0\n"); );
+VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__5__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__5__KET____DOT__trng_inst__0\n"); );
     Vtest_simon__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Init
@@ -290,7 +285,6 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
                                                         | (1U 
                                                            & ((IData)(vlSelfRef.__PVT__nlfsr2__DOT__b) 
                                                               >> 4U)))))));
-    vlSelfRef.nlfsr3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4 = 0U;
     vlSelfRef.__PVT__nlfsr3__DOT__wgt2_5o = (1U & (0x41fdc9dU 
                                                    >> (IData)(vlSelfRef.__PVT__nlfsr3__DOT__C5)));
     __Vtableidx6 = (((IData)(vlSelfRef.__PVT__fsm__DOT__cnt) 
@@ -302,8 +296,8 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
         [__Vtableidx6];
 }
 
-VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__6__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+              Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__6__KET____DOT__trng_inst__0\n"); );
+VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__6__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__6__KET____DOT__trng_inst__0\n"); );
     Vtest_simon__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Init
@@ -339,7 +333,6 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
                                                         | (1U 
                                                            & ((IData)(vlSelfRef.__PVT__nlfsr2__DOT__b) 
                                                               >> 4U)))))));
-    vlSelfRef.nlfsr3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4 = 0U;
     vlSelfRef.__PVT__nlfsr3__DOT__wgt2_5o = (1U & (0x41fdc9dU 
                                                    >> (IData)(vlSelfRef.__PVT__nlfsr3__DOT__C5)));
     __Vtableidx7 = (((IData)(vlSelfRef.__PVT__fsm__DOT__cnt) 
@@ -351,8 +344,8 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
         [__Vtableidx7];
 }
 
-VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__7__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+              Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__7__KET____DOT__trng_inst__0\n"); );
+VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__7__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__7__KET____DOT__trng_inst__0\n"); );
     Vtest_simon__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Init
@@ -388,7 +381,6 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
                                                         | (1U 
                                                            & ((IData)(vlSelfRef.__PVT__nlfsr2__DOT__b) 
                                                               >> 4U)))))));
-    vlSelfRef.nlfsr3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4 = 0U;
     vlSelfRef.__PVT__nlfsr3__DOT__wgt2_5o = (1U & (0x41fdc9dU 
                                                    >> (IData)(vlSelfRef.__PVT__nlfsr3__DOT__C5)));
     __Vtableidx8 = (((IData)(vlSelfRef.__PVT__fsm__DOT__cnt) 
@@ -400,8 +392,8 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
         [__Vtableidx8];
 }
 
-VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__8__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+              Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__8__KET____DOT__trng_inst__0\n"); );
+VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__8__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__8__KET____DOT__trng_inst__0\n"); );
     Vtest_simon__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Init
@@ -437,7 +429,6 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
                                                         | (1U 
                                                            & ((IData)(vlSelfRef.__PVT__nlfsr2__DOT__b) 
                                                               >> 4U)))))));
-    vlSelfRef.nlfsr3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4 = 0U;
     vlSelfRef.__PVT__nlfsr3__DOT__wgt2_5o = (1U & (0x41fdc9dU 
                                                    >> (IData)(vlSelfRef.__PVT__nlfsr3__DOT__C5)));
     __Vtableidx9 = (((IData)(vlSelfRef.__PVT__fsm__DOT__cnt) 
@@ -449,8 +440,8 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
         [__Vtableidx9];
 }
 
-VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__9__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+              Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__9__KET____DOT__trng_inst__0\n"); );
+VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__9__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__9__KET____DOT__trng_inst__0\n"); );
     Vtest_simon__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Init
@@ -486,7 +477,6 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
                                                         | (1U 
                                                            & ((IData)(vlSelfRef.__PVT__nlfsr2__DOT__b) 
                                                               >> 4U)))))));
-    vlSelfRef.nlfsr3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4 = 0U;
     vlSelfRef.__PVT__nlfsr3__DOT__wgt2_5o = (1U & (0x41fdc9dU 
                                                    >> (IData)(vlSelfRef.__PVT__nlfsr3__DOT__C5)));
     __Vtableidx10 = (((IData)(vlSelfRef.__PVT__fsm__DOT__cnt) 
@@ -498,8 +488,8 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
         [__Vtableidx10];
 }
 
-VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__10__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+              Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__10__KET____DOT__trng_inst__0\n"); );
+VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__10__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__10__KET____DOT__trng_inst__0\n"); );
     Vtest_simon__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Init
@@ -535,7 +525,6 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
                                                         | (1U 
                                                            & ((IData)(vlSelfRef.__PVT__nlfsr2__DOT__b) 
                                                               >> 4U)))))));
-    vlSelfRef.nlfsr3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4 = 0U;
     vlSelfRef.__PVT__nlfsr3__DOT__wgt2_5o = (1U & (0x41fdc9dU 
                                                    >> (IData)(vlSelfRef.__PVT__nlfsr3__DOT__C5)));
     __Vtableidx11 = (((IData)(vlSelfRef.__PVT__fsm__DOT__cnt) 
@@ -547,8 +536,8 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
         [__Vtableidx11];
 }
 
-VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__11__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+              Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__11__KET____DOT__trng_inst__0\n"); );
+VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__11__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__11__KET____DOT__trng_inst__0\n"); );
     Vtest_simon__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Init
@@ -584,7 +573,6 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
                                                         | (1U 
                                                            & ((IData)(vlSelfRef.__PVT__nlfsr2__DOT__b) 
                                                               >> 4U)))))));
-    vlSelfRef.nlfsr3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4 = 0U;
     vlSelfRef.__PVT__nlfsr3__DOT__wgt2_5o = (1U & (0x41fdc9dU 
                                                    >> (IData)(vlSelfRef.__PVT__nlfsr3__DOT__C5)));
     __Vtableidx12 = (((IData)(vlSelfRef.__PVT__fsm__DOT__cnt) 
@@ -596,8 +584,8 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
         [__Vtableidx12];
 }
 
-VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__12__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+              Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__12__KET____DOT__trng_inst__0\n"); );
+VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__12__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__12__KET____DOT__trng_inst__0\n"); );
     Vtest_simon__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Init
@@ -633,7 +621,6 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
                                                         | (1U 
                                                            & ((IData)(vlSelfRef.__PVT__nlfsr2__DOT__b) 
                                                               >> 4U)))))));
-    vlSelfRef.nlfsr3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4 = 0U;
     vlSelfRef.__PVT__nlfsr3__DOT__wgt2_5o = (1U & (0x41fdc9dU 
                                                    >> (IData)(vlSelfRef.__PVT__nlfsr3__DOT__C5)));
     __Vtableidx13 = (((IData)(vlSelfRef.__PVT__fsm__DOT__cnt) 
@@ -645,8 +632,8 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
         [__Vtableidx13];
 }
 
-VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__13__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+              Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__13__KET____DOT__trng_inst__0\n"); );
+VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__13__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__13__KET____DOT__trng_inst__0\n"); );
     Vtest_simon__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Init
@@ -682,7 +669,6 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
                                                         | (1U 
                                                            & ((IData)(vlSelfRef.__PVT__nlfsr2__DOT__b) 
                                                               >> 4U)))))));
-    vlSelfRef.nlfsr3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4 = 0U;
     vlSelfRef.__PVT__nlfsr3__DOT__wgt2_5o = (1U & (0x41fdc9dU 
                                                    >> (IData)(vlSelfRef.__PVT__nlfsr3__DOT__C5)));
     __Vtableidx14 = (((IData)(vlSelfRef.__PVT__fsm__DOT__cnt) 
@@ -694,8 +680,8 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
         [__Vtableidx14];
 }
 
-VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__14__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+              Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__14__KET____DOT__trng_inst__0\n"); );
+VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__14__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__14__KET____DOT__trng_inst__0\n"); );
     Vtest_simon__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Init
@@ -731,7 +717,6 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
                                                         | (1U 
                                                            & ((IData)(vlSelfRef.__PVT__nlfsr2__DOT__b) 
                                                               >> 4U)))))));
-    vlSelfRef.nlfsr3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4 = 0U;
     vlSelfRef.__PVT__nlfsr3__DOT__wgt2_5o = (1U & (0x41fdc9dU 
                                                    >> (IData)(vlSelfRef.__PVT__nlfsr3__DOT__C5)));
     __Vtableidx15 = (((IData)(vlSelfRef.__PVT__fsm__DOT__cnt) 
@@ -743,8 +728,8 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
         [__Vtableidx15];
 }
 
-VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__15__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+              Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__15__KET____DOT__trng_inst__0\n"); );
+VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__15__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__15__KET____DOT__trng_inst__0\n"); );
     Vtest_simon__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Init
@@ -780,7 +765,6 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
                                                         | (1U 
                                                            & ((IData)(vlSelfRef.__PVT__nlfsr2__DOT__b) 
                                                               >> 4U)))))));
-    vlSelfRef.nlfsr3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4 = 0U;
     vlSelfRef.__PVT__nlfsr3__DOT__wgt2_5o = (1U & (0x41fdc9dU 
                                                    >> (IData)(vlSelfRef.__PVT__nlfsr3__DOT__C5)));
     __Vtableidx16 = (((IData)(vlSelfRef.__PVT__fsm__DOT__cnt) 
@@ -792,8 +776,8 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
         [__Vtableidx16];
 }
 
-VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__16__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+              Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__16__KET____DOT__trng_inst__0\n"); );
+VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__16__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__16__KET____DOT__trng_inst__0\n"); );
     Vtest_simon__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Init
@@ -829,7 +813,6 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
                                                         | (1U 
                                                            & ((IData)(vlSelfRef.__PVT__nlfsr2__DOT__b) 
                                                               >> 4U)))))));
-    vlSelfRef.nlfsr3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4 = 0U;
     vlSelfRef.__PVT__nlfsr3__DOT__wgt2_5o = (1U & (0x41fdc9dU 
                                                    >> (IData)(vlSelfRef.__PVT__nlfsr3__DOT__C5)));
     __Vtableidx17 = (((IData)(vlSelfRef.__PVT__fsm__DOT__cnt) 
@@ -841,8 +824,8 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
         [__Vtableidx17];
 }
 
-VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__17__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+              Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__17__KET____DOT__trng_inst__0\n"); );
+VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__17__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__17__KET____DOT__trng_inst__0\n"); );
     Vtest_simon__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Init
@@ -878,7 +861,6 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
                                                         | (1U 
                                                            & ((IData)(vlSelfRef.__PVT__nlfsr2__DOT__b) 
                                                               >> 4U)))))));
-    vlSelfRef.nlfsr3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4 = 0U;
     vlSelfRef.__PVT__nlfsr3__DOT__wgt2_5o = (1U & (0x41fdc9dU 
                                                    >> (IData)(vlSelfRef.__PVT__nlfsr3__DOT__C5)));
     __Vtableidx18 = (((IData)(vlSelfRef.__PVT__fsm__DOT__cnt) 
@@ -890,8 +872,8 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
         [__Vtableidx18];
 }
 
-VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__18__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+              Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__18__KET____DOT__trng_inst__0\n"); );
+VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__18__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__18__KET____DOT__trng_inst__0\n"); );
     Vtest_simon__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Init
@@ -927,7 +909,6 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
                                                         | (1U 
                                                            & ((IData)(vlSelfRef.__PVT__nlfsr2__DOT__b) 
                                                               >> 4U)))))));
-    vlSelfRef.nlfsr3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4 = 0U;
     vlSelfRef.__PVT__nlfsr3__DOT__wgt2_5o = (1U & (0x41fdc9dU 
                                                    >> (IData)(vlSelfRef.__PVT__nlfsr3__DOT__C5)));
     __Vtableidx19 = (((IData)(vlSelfRef.__PVT__fsm__DOT__cnt) 
@@ -939,8 +920,8 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
         [__Vtableidx19];
 }
 
-VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__19__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+              Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__19__KET____DOT__trng_inst__0\n"); );
+VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__19__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__19__KET____DOT__trng_inst__0\n"); );
     Vtest_simon__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Init
@@ -976,7 +957,6 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
                                                         | (1U 
                                                            & ((IData)(vlSelfRef.__PVT__nlfsr2__DOT__b) 
                                                               >> 4U)))))));
-    vlSelfRef.nlfsr3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4 = 0U;
     vlSelfRef.__PVT__nlfsr3__DOT__wgt2_5o = (1U & (0x41fdc9dU 
                                                    >> (IData)(vlSelfRef.__PVT__nlfsr3__DOT__C5)));
     __Vtableidx20 = (((IData)(vlSelfRef.__PVT__fsm__DOT__cnt) 
@@ -988,8 +968,8 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
         [__Vtableidx20];
 }
 
-VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__20__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+              Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__20__KET____DOT__trng_inst__0\n"); );
+VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__20__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__20__KET____DOT__trng_inst__0\n"); );
     Vtest_simon__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Init
@@ -1025,7 +1005,6 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
                                                         | (1U 
                                                            & ((IData)(vlSelfRef.__PVT__nlfsr2__DOT__b) 
                                                               >> 4U)))))));
-    vlSelfRef.nlfsr3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4 = 0U;
     vlSelfRef.__PVT__nlfsr3__DOT__wgt2_5o = (1U & (0x41fdc9dU 
                                                    >> (IData)(vlSelfRef.__PVT__nlfsr3__DOT__C5)));
     __Vtableidx21 = (((IData)(vlSelfRef.__PVT__fsm__DOT__cnt) 
@@ -1037,8 +1016,8 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
         [__Vtableidx21];
 }
 
-VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__21__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+              Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__21__KET____DOT__trng_inst__0\n"); );
+VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__21__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__21__KET____DOT__trng_inst__0\n"); );
     Vtest_simon__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Init
@@ -1074,7 +1053,6 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
                                                         | (1U 
                                                            & ((IData)(vlSelfRef.__PVT__nlfsr2__DOT__b) 
                                                               >> 4U)))))));
-    vlSelfRef.nlfsr3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4 = 0U;
     vlSelfRef.__PVT__nlfsr3__DOT__wgt2_5o = (1U & (0x41fdc9dU 
                                                    >> (IData)(vlSelfRef.__PVT__nlfsr3__DOT__C5)));
     __Vtableidx22 = (((IData)(vlSelfRef.__PVT__fsm__DOT__cnt) 
@@ -1086,8 +1064,8 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
         [__Vtableidx22];
 }
 
-VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__22__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+              Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__22__KET____DOT__trng_inst__0\n"); );
+VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__22__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__22__KET____DOT__trng_inst__0\n"); );
     Vtest_simon__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Init
@@ -1123,7 +1101,6 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
                                                         | (1U 
                                                            & ((IData)(vlSelfRef.__PVT__nlfsr2__DOT__b) 
                                                               >> 4U)))))));
-    vlSelfRef.nlfsr3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4 = 0U;
     vlSelfRef.__PVT__nlfsr3__DOT__wgt2_5o = (1U & (0x41fdc9dU 
                                                    >> (IData)(vlSelfRef.__PVT__nlfsr3__DOT__C5)));
     __Vtableidx23 = (((IData)(vlSelfRef.__PVT__fsm__DOT__cnt) 
@@ -1135,8 +1112,8 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
         [__Vtableidx23];
 }
 
-VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__23__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+              Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__23__KET____DOT__trng_inst__0\n"); );
+VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__23__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__23__KET____DOT__trng_inst__0\n"); );
     Vtest_simon__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Init
@@ -1172,7 +1149,6 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
                                                         | (1U 
                                                            & ((IData)(vlSelfRef.__PVT__nlfsr2__DOT__b) 
                                                               >> 4U)))))));
-    vlSelfRef.nlfsr3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4 = 0U;
     vlSelfRef.__PVT__nlfsr3__DOT__wgt2_5o = (1U & (0x41fdc9dU 
                                                    >> (IData)(vlSelfRef.__PVT__nlfsr3__DOT__C5)));
     __Vtableidx24 = (((IData)(vlSelfRef.__PVT__fsm__DOT__cnt) 
@@ -1184,8 +1160,8 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
         [__Vtableidx24];
 }
 
-VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__24__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+              Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__24__KET____DOT__trng_inst__0\n"); );
+VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__24__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__24__KET____DOT__trng_inst__0\n"); );
     Vtest_simon__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Init
@@ -1221,7 +1197,6 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
                                                         | (1U 
                                                            & ((IData)(vlSelfRef.__PVT__nlfsr2__DOT__b) 
                                                               >> 4U)))))));
-    vlSelfRef.nlfsr3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4 = 0U;
     vlSelfRef.__PVT__nlfsr3__DOT__wgt2_5o = (1U & (0x41fdc9dU 
                                                    >> (IData)(vlSelfRef.__PVT__nlfsr3__DOT__C5)));
     __Vtableidx25 = (((IData)(vlSelfRef.__PVT__fsm__DOT__cnt) 
@@ -1233,8 +1208,8 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
         [__Vtableidx25];
 }
 
-VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__25__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+              Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__25__KET____DOT__trng_inst__0\n"); );
+VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__25__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__25__KET____DOT__trng_inst__0\n"); );
     Vtest_simon__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Init
@@ -1270,7 +1245,6 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
                                                         | (1U 
                                                            & ((IData)(vlSelfRef.__PVT__nlfsr2__DOT__b) 
                                                               >> 4U)))))));
-    vlSelfRef.nlfsr3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4 = 0U;
     vlSelfRef.__PVT__nlfsr3__DOT__wgt2_5o = (1U & (0x41fdc9dU 
                                                    >> (IData)(vlSelfRef.__PVT__nlfsr3__DOT__C5)));
     __Vtableidx26 = (((IData)(vlSelfRef.__PVT__fsm__DOT__cnt) 
@@ -1282,8 +1256,8 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
         [__Vtableidx26];
 }
 
-VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__26__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+              Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__26__KET____DOT__trng_inst__0\n"); );
+VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__26__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__26__KET____DOT__trng_inst__0\n"); );
     Vtest_simon__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Init
@@ -1319,7 +1293,6 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
                                                         | (1U 
                                                            & ((IData)(vlSelfRef.__PVT__nlfsr2__DOT__b) 
                                                               >> 4U)))))));
-    vlSelfRef.nlfsr3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4 = 0U;
     vlSelfRef.__PVT__nlfsr3__DOT__wgt2_5o = (1U & (0x41fdc9dU 
                                                    >> (IData)(vlSelfRef.__PVT__nlfsr3__DOT__C5)));
     __Vtableidx27 = (((IData)(vlSelfRef.__PVT__fsm__DOT__cnt) 
@@ -1331,8 +1304,8 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
         [__Vtableidx27];
 }
 
-VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__27__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+              Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__27__KET____DOT__trng_inst__0\n"); );
+VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__27__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__27__KET____DOT__trng_inst__0\n"); );
     Vtest_simon__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Init
@@ -1368,7 +1341,6 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
                                                         | (1U 
                                                            & ((IData)(vlSelfRef.__PVT__nlfsr2__DOT__b) 
                                                               >> 4U)))))));
-    vlSelfRef.nlfsr3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4 = 0U;
     vlSelfRef.__PVT__nlfsr3__DOT__wgt2_5o = (1U & (0x41fdc9dU 
                                                    >> (IData)(vlSelfRef.__PVT__nlfsr3__DOT__C5)));
     __Vtableidx28 = (((IData)(vlSelfRef.__PVT__fsm__DOT__cnt) 
@@ -1380,8 +1352,8 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
         [__Vtableidx28];
 }
 
-VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__28__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+              Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__28__KET____DOT__trng_inst__0\n"); );
+VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__28__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__28__KET____DOT__trng_inst__0\n"); );
     Vtest_simon__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Init
@@ -1417,7 +1389,6 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
                                                         | (1U 
                                                            & ((IData)(vlSelfRef.__PVT__nlfsr2__DOT__b) 
                                                               >> 4U)))))));
-    vlSelfRef.nlfsr3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4 = 0U;
     vlSelfRef.__PVT__nlfsr3__DOT__wgt2_5o = (1U & (0x41fdc9dU 
                                                    >> (IData)(vlSelfRef.__PVT__nlfsr3__DOT__C5)));
     __Vtableidx29 = (((IData)(vlSelfRef.__PVT__fsm__DOT__cnt) 
@@ -1429,8 +1400,8 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
         [__Vtableidx29];
 }
 
-VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__29__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+              Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__29__KET____DOT__trng_inst__0\n"); );
+VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__29__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__29__KET____DOT__trng_inst__0\n"); );
     Vtest_simon__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Init
@@ -1466,7 +1437,6 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
                                                         | (1U 
                                                            & ((IData)(vlSelfRef.__PVT__nlfsr2__DOT__b) 
                                                               >> 4U)))))));
-    vlSelfRef.nlfsr3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4 = 0U;
     vlSelfRef.__PVT__nlfsr3__DOT__wgt2_5o = (1U & (0x41fdc9dU 
                                                    >> (IData)(vlSelfRef.__PVT__nlfsr3__DOT__C5)));
     __Vtableidx30 = (((IData)(vlSelfRef.__PVT__fsm__DOT__cnt) 
@@ -1478,8 +1448,8 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
         [__Vtableidx30];
 }
 
-VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__30__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+              Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__30__KET____DOT__trng_inst__0\n"); );
+VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__30__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__30__KET____DOT__trng_inst__0\n"); );
     Vtest_simon__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Init
@@ -1515,7 +1485,6 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
                                                         | (1U 
                                                            & ((IData)(vlSelfRef.__PVT__nlfsr2__DOT__b) 
                                                               >> 4U)))))));
-    vlSelfRef.nlfsr3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4 = 0U;
     vlSelfRef.__PVT__nlfsr3__DOT__wgt2_5o = (1U & (0x41fdc9dU 
                                                    >> (IData)(vlSelfRef.__PVT__nlfsr3__DOT__C5)));
     __Vtableidx31 = (((IData)(vlSelfRef.__PVT__fsm__DOT__cnt) 
@@ -1527,8 +1496,8 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
         [__Vtableidx31];
 }
 
-VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__31__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+              Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__ram_inst__DOT__rng_gen__DOT__trng_array__BRA__31__KET____DOT__trng_inst__0\n"); );
+VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__31__KET____DOT__trng_inst__0(Vtest_simon_trng* vlSelf) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT__rng_gen__DOT__trng_array__BRA__31__KET____DOT__trng_inst__0\n"); );
     Vtest_simon__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Init
@@ -1564,7 +1533,6 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
                                                         | (1U 
                                                            & ((IData)(vlSelfRef.__PVT__nlfsr2__DOT__b) 
                                                               >> 4U)))))));
-    vlSelfRef.nlfsr3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4 = 0U;
     vlSelfRef.__PVT__nlfsr3__DOT__wgt2_5o = (1U & (0x41fdc9dU 
                                                    >> (IData)(vlSelfRef.__PVT__nlfsr3__DOT__C5)));
     __Vtableidx32 = (((IData)(vlSelfRef.__PVT__fsm__DOT__cnt) 
@@ -1577,7 +1545,7 @@ VL_ATTR_COLD void Vtest_simon_trng___stl_sequent__TOP__test_simon__DOT__dut__DOT
 }
 
 VL_ATTR_COLD void Vtest_simon_trng___ctor_var_reset(Vtest_simon_trng* vlSelf) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+              Vtest_simon_trng___ctor_var_reset\n"); );
+    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtest_simon_trng___ctor_var_reset\n"); );
     Vtest_simon__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Body
@@ -1604,5 +1572,4 @@ VL_ATTR_COLD void Vtest_simon_trng___ctor_var_reset(Vtest_simon_trng* vlSelf) {
     vlSelf->__PVT__nlfsr3__DOT__C1 = VL_RAND_RESET_I(5);
     vlSelf->__PVT__nlfsr3__DOT__C0 = VL_RAND_RESET_I(5);
     vlSelf->__PVT__nlfsr3__DOT__wgt2_5o = VL_RAND_RESET_I(1);
-    vlSelf->nlfsr3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4 = VL_RAND_RESET_I(1);
 }

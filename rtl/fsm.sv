@@ -1,3 +1,4 @@
+`timescale 1ns/1ps
 module fsm (
     input  logic clk,
     input  logic rst,

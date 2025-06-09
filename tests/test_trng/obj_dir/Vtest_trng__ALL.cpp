@@ -5,6 +5,7 @@
 #include "Vtest_trng___024root__DepSet_hc60cbaef__0.cpp"
 #include "Vtest_trng__main.cpp"
 #include "Vtest_trng__Trace__0.cpp"
+#include "Vtest_trng__ConstPool_0.cpp"
 #include "Vtest_trng___024root__Slow.cpp"
 #include "Vtest_trng___024root__DepSet_h9a6a8aac__0__Slow.cpp"
 #include "Vtest_trng___024root__DepSet_hc60cbaef__0__Slow.cpp"

@@ -24,6 +24,7 @@ class alignas(VL_CACHE_LINE_BYTES) Vtest_trng___024root final : public Verilated
     CData/*0:0*/ test_trng__DOT__changed;
     CData/*0:0*/ test_trng__DOT__trng_inst__DOT__nlfsr3_ce;
     CData/*4:0*/ test_trng__DOT__trng_inst__DOT__s;
+    CData/*0:0*/ test_trng__DOT__trng_inst__DOT__output_en;
     CData/*2:0*/ test_trng__DOT__trng_inst__DOT__fsm__DOT__state;
     CData/*5:0*/ test_trng__DOT__trng_inst__DOT__fsm__DOT__cnt;
     CData/*0:0*/ test_trng__DOT__trng_inst__DOT__nlfsr1__DOT__mux1_in;

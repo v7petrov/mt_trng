@@ -30,6 +30,7 @@ VM_CLASSES_FAST += \
 
 # Generated module classes, non-fast-path, compile with low/medium optimization
 VM_CLASSES_SLOW += \
+	Vtest_trng__ConstPool_0 \
 	Vtest_trng___024root__Slow \
 	Vtest_trng___024root__DepSet_h9a6a8aac__0__Slow \
 	Vtest_trng___024root__DepSet_hc60cbaef__0__Slow \

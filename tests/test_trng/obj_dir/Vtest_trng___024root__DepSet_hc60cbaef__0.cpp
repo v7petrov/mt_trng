@@ -94,11 +94,16 @@ void Vtest_trng___024root___eval_nba(Vtest_trng___024root* vlSelf) {
     }
 }
 
+extern const VlUnpacked<CData/*0:0*/, 256> Vtest_trng__ConstPool__TABLE_heab3c15f_0;
+extern const VlUnpacked<CData/*0:0*/, 256> Vtest_trng__ConstPool__TABLE_h586c1205_0;
+
 VL_INLINE_OPT void Vtest_trng___024root___nba_sequent__TOP__0(Vtest_trng___024root* vlSelf) {
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtest_trng___024root___nba_sequent__TOP__0\n"); );
     Vtest_trng__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Init
+    CData/*7:0*/ __Vtableidx1;
+    __Vtableidx1 = 0;
     CData/*2:0*/ __Vdly__test_trng__DOT__trng_inst__DOT__fsm__DOT__state;
     __Vdly__test_trng__DOT__trng_inst__DOT__fsm__DOT__state = 0;
     CData/*5:0*/ __Vdly__test_trng__DOT__trng_inst__DOT__fsm__DOT__cnt;
@@ -208,11 +213,13 @@ VL_INLINE_OPT void Vtest_trng___024root___nba_sequent__TOP__0(Vtest_trng___024ro
                                                 >> 6U)) 
                                        | (1U & ((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr2__DOT__b) 
                                                 >> 4U)))))));
+    __Vtableidx1 = (((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__fsm__DOT__cnt) 
+                     << 2U) | (((2U == (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__fsm__DOT__state)) 
+                                << 1U) | (4U == (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__fsm__DOT__state))));
     vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3_ce 
-        = ((4U == (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__fsm__DOT__state)) 
-           || ((2U == (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__fsm__DOT__state))
-                ? (0U != (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__fsm__DOT__cnt))
-                : (4U == (0x3fU & VL_MODDIV_III(6, (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__fsm__DOT__cnt), (IData)(5U))))));
+        = Vtest_trng__ConstPool__TABLE_heab3c15f_0[__Vtableidx1];
+    vlSelfRef.test_trng__DOT__trng_inst__DOT__output_en 
+        = Vtest_trng__ConstPool__TABLE_h586c1205_0[__Vtableidx1];
     vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4 = 0U;
 }
 

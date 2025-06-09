@@ -1,7 +1,12 @@
 `timescale 1ns / 1ps
 
 module test_simon;
-
+    `ifdef USE_POWER_PINS
+        wire VPWR;
+        wire VGND;
+        assign VPWR=1;
+        assign VGND=0;
+    `endif
     // Clock and reset
     logic clk, rst;
 
@@ -30,7 +35,8 @@ module test_simon;
         .cipher_en(cipher_en),
         .plaintext(plaintext),
         .cipher_out(cipher_out),
-        .done(done)
+        .done(done),
+        .*
     );
 
     // Clock generator: 10ns period
@@ -52,19 +58,21 @@ module test_simon;
         tick(); // Clear after ack
     endtask
 
-    // initial begin
-    //   #10000;
-    //   $display("[TB] TIMEOUT: Simulation finished after 5000 time units.");
-    //   $finish;
-    // end
+    initial begin
+      #100000;
+      $display("[TB] TIMEOUT: Simulation finished after 5000 time units.");
+      $finish;
+    end
 
 
     // Main stimulus
     initial begin
         $display("=== RNG + SIMON Cipher Top-Level TB ===");
+        rst = 0;
+        clk = 0;
+        @(posedge clk);
 
         // Initialize
-        clk = 0;
         rst = 1;
         key_we = 0;
         key_addr = 0;

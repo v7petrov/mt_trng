@@ -1,3 +1,0 @@
-Vtest_trng_ram___024root__DepSet_h1e6c2733__0.o: \
- Vtest_trng_ram___024root__DepSet_h1e6c2733__0.cpp Vtest_trng_ram__pch.h \
- Vtest_trng_ram__Syms.h Vtest_trng_ram___024root.h

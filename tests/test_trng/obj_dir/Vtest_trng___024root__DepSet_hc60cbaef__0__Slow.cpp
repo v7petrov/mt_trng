@@ -78,10 +78,16 @@ VL_ATTR_COLD void Vtest_trng___024root___eval_stl(Vtest_trng___024root* vlSelf) 
     }
 }
 
+extern const VlUnpacked<CData/*0:0*/, 256> Vtest_trng__ConstPool__TABLE_heab3c15f_0;
+extern const VlUnpacked<CData/*0:0*/, 256> Vtest_trng__ConstPool__TABLE_h586c1205_0;
+
 VL_ATTR_COLD void Vtest_trng___024root___stl_sequent__TOP__0(Vtest_trng___024root* vlSelf) {
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtest_trng___024root___stl_sequent__TOP__0\n"); );
     Vtest_trng__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
+    // Init
+    CData/*7:0*/ __Vtableidx1;
+    __Vtableidx1 = 0;
     // Body
     vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr1__DOT__mux1_in 
         = (1U & (vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr1__DOT__a 
@@ -101,11 +107,13 @@ VL_ATTR_COLD void Vtest_trng___024root___stl_sequent__TOP__0(Vtest_trng___024roo
                                                 >> 6U)) 
                                        | (1U & ((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr2__DOT__b) 
                                                 >> 4U)))))));
+    __Vtableidx1 = (((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__fsm__DOT__cnt) 
+                     << 2U) | (((2U == (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__fsm__DOT__state)) 
+                                << 1U) | (4U == (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__fsm__DOT__state))));
     vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3_ce 
-        = ((4U == (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__fsm__DOT__state)) 
-           || ((2U == (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__fsm__DOT__state))
-                ? (0U != (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__fsm__DOT__cnt))
-                : (4U == (0x3fU & VL_MODDIV_III(6, (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__fsm__DOT__cnt), (IData)(5U))))));
+        = Vtest_trng__ConstPool__TABLE_heab3c15f_0[__Vtableidx1];
+    vlSelfRef.test_trng__DOT__trng_inst__DOT__output_en 
+        = Vtest_trng__ConstPool__TABLE_h586c1205_0[__Vtableidx1];
     vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4 = 0U;
     vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3__DOT__next_C5 
         = ((4U == (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__fsm__DOT__state))
@@ -207,6 +215,7 @@ VL_ATTR_COLD void Vtest_trng___024root___ctor_var_reset(Vtest_trng___024root* vl
     vlSelf->test_trng__DOT__changed = VL_RAND_RESET_I(1);
     vlSelf->test_trng__DOT__trng_inst__DOT__nlfsr3_ce = VL_RAND_RESET_I(1);
     vlSelf->test_trng__DOT__trng_inst__DOT__s = VL_RAND_RESET_I(5);
+    vlSelf->test_trng__DOT__trng_inst__DOT__output_en = VL_RAND_RESET_I(1);
     vlSelf->test_trng__DOT__trng_inst__DOT__fsm__DOT__state = VL_RAND_RESET_I(3);
     vlSelf->test_trng__DOT__trng_inst__DOT__fsm__DOT__cnt = VL_RAND_RESET_I(6);
     vlSelf->test_trng__DOT__trng_inst__DOT__nlfsr1__DOT__a = VL_RAND_RESET_I(17);

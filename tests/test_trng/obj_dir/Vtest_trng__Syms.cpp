@@ -43,7 +43,7 @@ Vtest_trng__Syms::Vtest_trng__Syms(VerilatedContext* contextp, const char* namep
     , TOP{this, namep}
 {
         // Check resources
-        Verilated::stackCheck(58);
+        Verilated::stackCheck(62);
     // Configure time unit / time precision
     _vm_contextp__->timeunit(-9);
     _vm_contextp__->timeprecision(-12);

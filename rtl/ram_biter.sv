@@ -154,17 +154,4 @@ module ram_biter (
         pB_wb_ack_o = pB_accessed_ram1_reg || pB_accessed_ram2_reg;
     end
 
-    // // Acknowledgment logic - acknowledge valid requests that complete
-    // always @(posedge clk_i) begin
-    //     if (rst_i) begin
-    //         pA_wb_ack_o <= 1'b0;
-    //         pB_wb_ack_o <= 1'b0;
-    //     end
-    //     else begin
-    //         // ACK the registered access signals (delayed by 1 cycle for RAM read timing)
-    //         pA_wb_ack_o <= pA_accessed_ram1_reg || pA_accessed_ram2_reg;
-    //         pB_wb_ack_o <= pB_accessed_ram1_reg || pB_accessed_ram2_reg;
-    //     end
-    // end
-    
 endmodule

@@ -55,7 +55,8 @@ VL_INLINE_OPT VlCoroutine Vtest_trng___024root___eval_initial__TOP__Vtiming__0(V
                - (IData)(1U));
     }
     if (vlSymsp->_vm_contextp__->assertOnGet(2, 1)) {
-        if (VL_UNLIKELY((vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3_ce))) {
+        if (VL_UNLIKELY((((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3_ce) 
+                          & (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__output_en))))) {
             VL_WRITEF_NX("[%0t] %%Error: test_trng.sv:61: Assertion failed in %Ntest_trng.test_trng_basic_operation: TRNG o_valid active after reset\n",0,
                          64,VL_TIME_UNITED_Q(1000),
                          -9,vlSymsp->name());
@@ -348,7 +349,8 @@ VL_INLINE_OPT VlCoroutine Vtest_trng___024root___eval_initial__TOP__Vtiming__0(V
                                                          "test_trng.sv", 
                                                          72);
     if (vlSymsp->_vm_contextp__->assertOnGet(2, 1)) {
-        if (VL_UNLIKELY((vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3_ce))) {
+        if (VL_UNLIKELY((((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3_ce) 
+                          & (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__output_en))))) {
             VL_WRITEF_NX("[%0t] %%Error: test_trng.sv:78: Assertion failed in %Ntest_trng.test_trng_basic_operation.unnamedblk1: TRNG o_valid active on non-5th cycle during RUN state\n",0,
                          64,VL_TIME_UNITED_Q(1000),
                          -9,vlSymsp->name());
@@ -361,7 +363,8 @@ VL_INLINE_OPT VlCoroutine Vtest_trng___024root___eval_initial__TOP__Vtiming__0(V
                                                          "test_trng.sv", 
                                                          72);
     if (vlSymsp->_vm_contextp__->assertOnGet(2, 1)) {
-        if (VL_UNLIKELY((vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3_ce))) {
+        if (VL_UNLIKELY((((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3_ce) 
+                          & (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__output_en))))) {
             VL_WRITEF_NX("[%0t] %%Error: test_trng.sv:78: Assertion failed in %Ntest_trng.test_trng_basic_operation.unnamedblk1: TRNG o_valid active on non-5th cycle during RUN state\n",0,
                          64,VL_TIME_UNITED_Q(1000),
                          -9,vlSymsp->name());
@@ -374,7 +377,8 @@ VL_INLINE_OPT VlCoroutine Vtest_trng___024root___eval_initial__TOP__Vtiming__0(V
                                                          "test_trng.sv", 
                                                          72);
     if (vlSymsp->_vm_contextp__->assertOnGet(2, 1)) {
-        if (VL_UNLIKELY((vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3_ce))) {
+        if (VL_UNLIKELY((((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3_ce) 
+                          & (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__output_en))))) {
             VL_WRITEF_NX("[%0t] %%Error: test_trng.sv:78: Assertion failed in %Ntest_trng.test_trng_basic_operation.unnamedblk1: TRNG o_valid active on non-5th cycle during RUN state\n",0,
                          64,VL_TIME_UNITED_Q(1000),
                          -9,vlSymsp->name());
@@ -387,7 +391,8 @@ VL_INLINE_OPT VlCoroutine Vtest_trng___024root___eval_initial__TOP__Vtiming__0(V
                                                          "test_trng.sv", 
                                                          72);
     if (vlSymsp->_vm_contextp__->assertOnGet(2, 1)) {
-        if (VL_UNLIKELY((vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3_ce))) {
+        if (VL_UNLIKELY((((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3_ce) 
+                          & (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__output_en))))) {
             VL_WRITEF_NX("[%0t] %%Error: test_trng.sv:78: Assertion failed in %Ntest_trng.test_trng_basic_operation.unnamedblk1: TRNG o_valid active on non-5th cycle during RUN state\n",0,
                          64,VL_TIME_UNITED_Q(1000),
                          -9,vlSymsp->name());
@@ -400,7 +405,8 @@ VL_INLINE_OPT VlCoroutine Vtest_trng___024root___eval_initial__TOP__Vtiming__0(V
                                                          "test_trng.sv", 
                                                          72);
     if (vlSymsp->_vm_contextp__->assertOnGet(2, 1)) {
-        if (VL_UNLIKELY(((1U & (~ (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3_ce)))))) {
+        if (VL_UNLIKELY(((1U & (~ ((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3_ce) 
+                                   & (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__output_en))))))) {
             VL_WRITEF_NX("[%0t] %%Error: test_trng.sv:75: Assertion failed in %Ntest_trng.test_trng_basic_operation.unnamedblk1: TRNG o_valid not active on 5th cycle during RUN state\n",0,
                          64,VL_TIME_UNITED_Q(1000),
                          -9,vlSymsp->name());
@@ -413,7 +419,8 @@ VL_INLINE_OPT VlCoroutine Vtest_trng___024root___eval_initial__TOP__Vtiming__0(V
                                                          "test_trng.sv", 
                                                          72);
     if (vlSymsp->_vm_contextp__->assertOnGet(2, 1)) {
-        if (VL_UNLIKELY((vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3_ce))) {
+        if (VL_UNLIKELY((((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3_ce) 
+                          & (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__output_en))))) {
             VL_WRITEF_NX("[%0t] %%Error: test_trng.sv:78: Assertion failed in %Ntest_trng.test_trng_basic_operation.unnamedblk1: TRNG o_valid active on non-5th cycle during RUN state\n",0,
                          64,VL_TIME_UNITED_Q(1000),
                          -9,vlSymsp->name());
@@ -426,7 +433,8 @@ VL_INLINE_OPT VlCoroutine Vtest_trng___024root___eval_initial__TOP__Vtiming__0(V
                                                          "test_trng.sv", 
                                                          72);
     if (vlSymsp->_vm_contextp__->assertOnGet(2, 1)) {
-        if (VL_UNLIKELY((vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3_ce))) {
+        if (VL_UNLIKELY((((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3_ce) 
+                          & (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__output_en))))) {
             VL_WRITEF_NX("[%0t] %%Error: test_trng.sv:78: Assertion failed in %Ntest_trng.test_trng_basic_operation.unnamedblk1: TRNG o_valid active on non-5th cycle during RUN state\n",0,
                          64,VL_TIME_UNITED_Q(1000),
                          -9,vlSymsp->name());
@@ -439,7 +447,8 @@ VL_INLINE_OPT VlCoroutine Vtest_trng___024root___eval_initial__TOP__Vtiming__0(V
                                                          "test_trng.sv", 
                                                          72);
     if (vlSymsp->_vm_contextp__->assertOnGet(2, 1)) {
-        if (VL_UNLIKELY((vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3_ce))) {
+        if (VL_UNLIKELY((((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3_ce) 
+                          & (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__output_en))))) {
             VL_WRITEF_NX("[%0t] %%Error: test_trng.sv:78: Assertion failed in %Ntest_trng.test_trng_basic_operation.unnamedblk1: TRNG o_valid active on non-5th cycle during RUN state\n",0,
                          64,VL_TIME_UNITED_Q(1000),
                          -9,vlSymsp->name());
@@ -452,7 +461,8 @@ VL_INLINE_OPT VlCoroutine Vtest_trng___024root___eval_initial__TOP__Vtiming__0(V
                                                          "test_trng.sv", 
                                                          72);
     if (vlSymsp->_vm_contextp__->assertOnGet(2, 1)) {
-        if (VL_UNLIKELY((vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3_ce))) {
+        if (VL_UNLIKELY((((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3_ce) 
+                          & (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__output_en))))) {
             VL_WRITEF_NX("[%0t] %%Error: test_trng.sv:78: Assertion failed in %Ntest_trng.test_trng_basic_operation.unnamedblk1: TRNG o_valid active on non-5th cycle during RUN state\n",0,
                          64,VL_TIME_UNITED_Q(1000),
                          -9,vlSymsp->name());
@@ -465,7 +475,8 @@ VL_INLINE_OPT VlCoroutine Vtest_trng___024root___eval_initial__TOP__Vtiming__0(V
                                                          "test_trng.sv", 
                                                          72);
     if (vlSymsp->_vm_contextp__->assertOnGet(2, 1)) {
-        if (VL_UNLIKELY(((1U & (~ (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3_ce)))))) {
+        if (VL_UNLIKELY(((1U & (~ ((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3_ce) 
+                                   & (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__output_en))))))) {
             VL_WRITEF_NX("[%0t] %%Error: test_trng.sv:75: Assertion failed in %Ntest_trng.test_trng_basic_operation.unnamedblk1: TRNG o_valid not active on 5th cycle during RUN state\n",0,
                          64,VL_TIME_UNITED_Q(1000),
                          -9,vlSymsp->name());
@@ -480,10 +491,12 @@ VL_INLINE_OPT VlCoroutine Vtest_trng___024root___eval_initial__TOP__Vtiming__0(V
                                                              "test_trng.sv", 
                                                              84);
         if (((0x2778a365U >> (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3__DOT__C1)) 
-             & (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3_ce))) {
+             & ((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3_ce) 
+                & (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__output_en)))) {
             __Vtask_test_trng__DOT__test_trng_basic_operation__0__warbler_o_high 
                 = ((IData)(1U) + __Vtask_test_trng__DOT__test_trng_basic_operation__0__warbler_o_high);
-        } else if (vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3_ce) {
+        } else if (((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3_ce) 
+                    & (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__output_en))) {
             __Vtask_test_trng__DOT__test_trng_basic_operation__0__warbler_o_low 
                 = ((IData)(1U) + __Vtask_test_trng__DOT__test_trng_basic_operation__0__warbler_o_low);
         }

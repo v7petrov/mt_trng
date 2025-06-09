@@ -24,31 +24,34 @@ void Vtest_trng___024root__trace_chg_0_sub_0(Vtest_trng___024root* vlSelf, Veril
     uint32_t* const oldp VL_ATTR_UNUSED = bufp->oldp(vlSymsp->__Vm_baseCode + 1);
     // Body
     if (VL_UNLIKELY((vlSelfRef.__Vm_traceActivity[1U]))) {
-        bufp->chgBit(oldp+0,(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3_ce));
+        bufp->chgBit(oldp+0,(((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3_ce) 
+                              & (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__output_en))));
         bufp->chgBit(oldp+1,((1U & (0x2778a365U >> (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3__DOT__C1)))));
         bufp->chgBit(oldp+2,((4U == (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__fsm__DOT__state))));
         bufp->chgBit(oldp+3,((2U == (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__fsm__DOT__state))));
         bufp->chgBit(oldp+4,((1U == (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__fsm__DOT__state))));
-        bufp->chgBit(oldp+5,((1U & vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr1__DOT__a)));
-        bufp->chgBit(oldp+6,((1U & (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr2__DOT__b))));
-        bufp->chgCData(oldp+7,(vlSelfRef.test_trng__DOT__trng_inst__DOT__s),5);
-        bufp->chgCData(oldp+8,(vlSelfRef.test_trng__DOT__trng_inst__DOT__fsm__DOT__state),3);
-        bufp->chgCData(oldp+9,(vlSelfRef.test_trng__DOT__trng_inst__DOT__fsm__DOT__cnt),6);
-        bufp->chgIData(oldp+10,(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr1__DOT__a),17);
-        bufp->chgBit(oldp+11,((1U & ((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr1__DOT__mux1_in) 
+        bufp->chgBit(oldp+5,(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3_ce));
+        bufp->chgBit(oldp+6,((1U & vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr1__DOT__a)));
+        bufp->chgBit(oldp+7,((1U & (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr2__DOT__b))));
+        bufp->chgCData(oldp+8,(vlSelfRef.test_trng__DOT__trng_inst__DOT__s),5);
+        bufp->chgBit(oldp+9,(vlSelfRef.test_trng__DOT__trng_inst__DOT__output_en));
+        bufp->chgCData(oldp+10,(vlSelfRef.test_trng__DOT__trng_inst__DOT__fsm__DOT__state),3);
+        bufp->chgCData(oldp+11,(vlSelfRef.test_trng__DOT__trng_inst__DOT__fsm__DOT__cnt),6);
+        bufp->chgIData(oldp+12,(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr1__DOT__a),17);
+        bufp->chgBit(oldp+13,((1U & ((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr1__DOT__mux1_in) 
                                      ^ (0x2778a365U 
                                         >> (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3__DOT__C1))))));
-        bufp->chgBit(oldp+12,(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr1__DOT__mux1_in));
-        bufp->chgBit(oldp+13,(((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3_ce) 
+        bufp->chgBit(oldp+14,(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr1__DOT__mux1_in));
+        bufp->chgBit(oldp+15,(((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3_ce) 
                                & ((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr1__DOT__mux1_in) 
                                   ^ (0x2778a365U >> (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3__DOT__C1))))));
-        bufp->chgBit(oldp+14,(((2U == (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__fsm__DOT__state))
+        bufp->chgBit(oldp+16,(((2U == (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__fsm__DOT__state))
                                 ? ((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3_ce) 
                                    & ((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr1__DOT__mux1_in) 
                                       ^ (0x2778a365U 
                                          >> (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3__DOT__C1))))
                                 : (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr1__DOT__mux1_in))));
-        bufp->chgBit(oldp+15,((1U & (0x2778a365U >> 
+        bufp->chgBit(oldp+17,((1U & (0x2778a365U >> 
                                      (((0x10U & (vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr1__DOT__a 
                                                  >> 0xbU)) 
                                        | (8U & (vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr1__DOT__a 
@@ -57,7 +60,7 @@ void Vtest_trng___024root__trace_chg_0_sub_0(Vtest_trng___024root* vlSelf, Veril
                                                 >> 6U)) 
                                          | (1U & (vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr1__DOT__a 
                                                   >> 4U))))))));
-        bufp->chgCData(oldp+16,((((0x10U & (vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr1__DOT__a 
+        bufp->chgCData(oldp+18,((((0x10U & (vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr1__DOT__a 
                                             >> 0xbU)) 
                                   | (8U & (vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr1__DOT__a 
                                            >> 7U))) 
@@ -65,40 +68,40 @@ void Vtest_trng___024root__trace_chg_0_sub_0(Vtest_trng___024root* vlSelf, Veril
                                            >> 6U)) 
                                     | (1U & (vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr1__DOT__a 
                                              >> 4U))))),5);
-        bufp->chgSData(oldp+17,(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr2__DOT__b),16);
-        bufp->chgBit(oldp+18,((1U & ((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr2__DOT__mux1_in) 
+        bufp->chgSData(oldp+19,(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr2__DOT__b),16);
+        bufp->chgBit(oldp+20,((1U & ((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr2__DOT__mux1_in) 
                                      ^ (0x2778a365U 
                                         >> (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3__DOT__C1))))));
-        bufp->chgBit(oldp+19,(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr2__DOT__mux1_in));
-        bufp->chgBit(oldp+20,(((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3_ce) 
+        bufp->chgBit(oldp+21,(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr2__DOT__mux1_in));
+        bufp->chgBit(oldp+22,(((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3_ce) 
                                & ((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr2__DOT__mux1_in) 
                                   ^ (0x2778a365U >> (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3__DOT__C1))))));
-        bufp->chgBit(oldp+21,(((2U == (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__fsm__DOT__state))
+        bufp->chgBit(oldp+23,(((2U == (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__fsm__DOT__state))
                                 ? ((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3_ce) 
                                    & ((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr2__DOT__mux1_in) 
                                       ^ (0x2778a365U 
                                          >> (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3__DOT__C1))))
                                 : (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr2__DOT__mux1_in))));
-        bufp->chgBit(oldp+22,((1U & (0x2778a365U >> 
+        bufp->chgBit(oldp+24,((1U & (0x2778a365U >> 
                                      ((0x10U & ((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr2__DOT__b) 
                                                 >> 8U)) 
                                       | ((0xeU & ((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr2__DOT__b) 
                                                   >> 6U)) 
                                          | (1U & ((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr2__DOT__b) 
                                                   >> 4U))))))));
-        bufp->chgCData(oldp+23,(((0x10U & ((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr2__DOT__b) 
+        bufp->chgCData(oldp+25,(((0x10U & ((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr2__DOT__b) 
                                            >> 8U)) 
                                  | ((0xeU & ((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr2__DOT__b) 
                                              >> 6U)) 
                                     | (1U & ((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr2__DOT__b) 
                                              >> 4U))))),5);
-        bufp->chgCData(oldp+24,(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3__DOT__C5),5);
-        bufp->chgCData(oldp+25,(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3__DOT__C4),5);
-        bufp->chgCData(oldp+26,(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3__DOT__C3),5);
-        bufp->chgCData(oldp+27,(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3__DOT__C2),5);
-        bufp->chgCData(oldp+28,(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3__DOT__C1),5);
-        bufp->chgCData(oldp+29,(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3__DOT__C0),5);
-        bufp->chgCData(oldp+30,(((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3__DOT__C1) 
+        bufp->chgCData(oldp+26,(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3__DOT__C5),5);
+        bufp->chgCData(oldp+27,(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3__DOT__C4),5);
+        bufp->chgCData(oldp+28,(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3__DOT__C3),5);
+        bufp->chgCData(oldp+29,(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3__DOT__C2),5);
+        bufp->chgCData(oldp+30,(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3__DOT__C1),5);
+        bufp->chgCData(oldp+31,(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3__DOT__C0),5);
+        bufp->chgCData(oldp+32,(((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3__DOT__C1) 
                                  ^ (((0x10U & ((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4) 
                                                << 4U)) 
                                      | ((8U & ((0x41fdc9dU 
@@ -110,7 +113,7 @@ void Vtest_trng___024root__trace_chg_0_sub_0(Vtest_trng___024root* vlSelf, Veril
                                                  << 2U)))) 
                                     | (2U & ((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4) 
                                              << 1U))))),5);
-        bufp->chgCData(oldp+31,((((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3__DOT__C1) 
+        bufp->chgCData(oldp+33,((((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3__DOT__C1) 
                                   ^ (((0x10U & ((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4) 
                                                 << 4U)) 
                                       | ((8U & ((0x41fdc9dU 
@@ -124,7 +127,7 @@ void Vtest_trng___024root__trace_chg_0_sub_0(Vtest_trng___024root* vlSelf, Veril
                                      | (2U & ((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4) 
                                               << 1U)))) 
                                  ^ (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__s))),5);
-        bufp->chgCData(oldp+32,(((((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3__DOT__C1) 
+        bufp->chgCData(oldp+34,(((((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3__DOT__C1) 
                                    ^ (((0x10U & ((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4) 
                                                  << 4U)) 
                                        | ((8U & ((0x41fdc9dU 
@@ -140,7 +143,7 @@ void Vtest_trng___024root__trace_chg_0_sub_0(Vtest_trng___024root* vlSelf, Veril
                                   ^ (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__s)) 
                                  ^ (1U & (0x41fdc9dU 
                                           >> (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3__DOT__C5))))),5);
-        bufp->chgCData(oldp+33,((((0x10U & ((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4) 
+        bufp->chgCData(oldp+35,((((0x10U & ((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4) 
                                             << 4U)) 
                                   | ((8U & ((0x41fdc9dU 
                                              >> (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3__DOT__C5)) 
@@ -151,17 +154,17 @@ void Vtest_trng___024root__trace_chg_0_sub_0(Vtest_trng___024root* vlSelf, Veril
                                               << 2U)))) 
                                  | (2U & ((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4) 
                                           << 1U)))),5);
-        bufp->chgBit(oldp+34,((1U & (0x41fdc9dU >> (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3__DOT__C5)))));
-        bufp->chgCData(oldp+35,((1U & (0x41fdc9dU >> (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3__DOT__C5)))),5);
-        bufp->chgBit(oldp+36,((1U & (vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr1__DOT__a 
+        bufp->chgBit(oldp+36,((1U & (0x41fdc9dU >> (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3__DOT__C5)))));
+        bufp->chgCData(oldp+37,((1U & (0x41fdc9dU >> (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3__DOT__C5)))),5);
+        bufp->chgBit(oldp+38,((1U & (vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr1__DOT__a 
                                      ^ (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr2__DOT__b)))));
     }
-    bufp->chgBit(oldp+37,(vlSelfRef.test_trng__DOT__clk));
-    bufp->chgBit(oldp+38,(vlSelfRef.test_trng__DOT__rst));
-    bufp->chgBit(oldp+39,(vlSelfRef.test_trng__DOT__trng_d1));
-    bufp->chgBit(oldp+40,(vlSelfRef.test_trng__DOT__trng_d2));
-    bufp->chgCData(oldp+41,(vlSelfRef.test_trng__DOT__trng_d3),5);
-    bufp->chgBit(oldp+42,(((4U == (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__fsm__DOT__state))
+    bufp->chgBit(oldp+39,(vlSelfRef.test_trng__DOT__clk));
+    bufp->chgBit(oldp+40,(vlSelfRef.test_trng__DOT__rst));
+    bufp->chgBit(oldp+41,(vlSelfRef.test_trng__DOT__trng_d1));
+    bufp->chgBit(oldp+42,(vlSelfRef.test_trng__DOT__trng_d2));
+    bufp->chgCData(oldp+43,(vlSelfRef.test_trng__DOT__trng_d3),5);
+    bufp->chgBit(oldp+44,(((4U == (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__fsm__DOT__state))
                             ? (IData)(vlSelfRef.test_trng__DOT__trng_d1)
                             : ((2U == (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__fsm__DOT__state))
                                 ? ((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3_ce) 
@@ -169,7 +172,7 @@ void Vtest_trng___024root__trace_chg_0_sub_0(Vtest_trng___024root* vlSelf, Veril
                                       ^ (0x2778a365U 
                                          >> (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3__DOT__C1))))
                                 : (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr1__DOT__mux1_in)))));
-    bufp->chgBit(oldp+43,(((4U == (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__fsm__DOT__state))
+    bufp->chgBit(oldp+45,(((4U == (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__fsm__DOT__state))
                             ? (IData)(vlSelfRef.test_trng__DOT__trng_d2)
                             : ((2U == (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__fsm__DOT__state))
                                 ? ((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3_ce) 
@@ -177,7 +180,7 @@ void Vtest_trng___024root__trace_chg_0_sub_0(Vtest_trng___024root* vlSelf, Veril
                                       ^ (0x2778a365U 
                                          >> (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3__DOT__C1))))
                                 : (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr2__DOT__mux1_in)))));
-    bufp->chgCData(oldp+44,(((4U == (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__fsm__DOT__state))
+    bufp->chgCData(oldp+46,(((4U == (IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__fsm__DOT__state))
                               ? (IData)(vlSelfRef.test_trng__DOT__trng_d3)
                               : ((((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3__DOT__C1) 
                                    ^ (((0x10U & ((IData)(vlSelfRef.test_trng__DOT__trng_inst__DOT__nlfsr3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4) 

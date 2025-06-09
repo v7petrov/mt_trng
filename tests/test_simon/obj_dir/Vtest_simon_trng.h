@@ -36,7 +36,6 @@ class alignas(VL_CACHE_LINE_BYTES) Vtest_simon_trng final : public VerilatedModu
     CData/*4:0*/ __PVT__nlfsr3__DOT__C1;
     CData/*4:0*/ __PVT__nlfsr3__DOT__C0;
     CData/*0:0*/ __PVT__nlfsr3__DOT__wgt2_5o;
-    CData/*0:0*/ nlfsr3__DOT__gamma_mult_inst__DOT____VdfgRegularize_hb2e29eae_0_4;
     SData/*15:0*/ __PVT__nlfsr2__DOT__b;
     IData/*16:0*/ __PVT__nlfsr1__DOT__a;
 

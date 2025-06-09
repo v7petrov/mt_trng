@@ -1,4 +1,5 @@
 // input is xor a0 and b0
+`timescale 1ns/1ps
 module shift5 (
     input  logic        clk,
     input  logic        rst,
